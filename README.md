@@ -74,7 +74,7 @@ En la 3er semana se te agendará la sesión y te notificaremos por correo el dí
 - Se tomará en cuenta tu participación en sesiones presenciales y virtuales. 
 
 # V. Agenda tu mentoría on-demand 📆
-[Asignaciones](https://github.com/wizelineacademy/BAZQA12022/blob/main/asignaciones.png)
+[Asignaciones]()
 
 Para agendar una mentoría personalizada en línea con alguno de los mentores, sigue estas instrucciones:
 
