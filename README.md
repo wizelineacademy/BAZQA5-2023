@@ -70,7 +70,7 @@ En [esta liga](Grabaciones%20y%20Presentaciones.md) encontrarás todas las graba
 ✴️ **Objetivo**
 Para aprobar el curso se te hará una evaluación verbal vía Zoom en la tercer semana, en la cual reforzarás y aplicarás los conocimientos que has adquirido.
 En la 3er semana se te agendará la sesión y te notificaremos por correo el día y la hora.
-- Para poder presentar tu proyecto final, debes contar con un mínimo de **3 mentorías on-demand**
+- Para poder presentar tu proyecto final, debes contar con un mínimo de **3 mentorías on-demand** con tu mentor asignado.
 - Se tomará en cuenta tu participación en sesiones presenciales y virtuales. 
 
 # V. Agenda tu mentoría on-demand 📆
