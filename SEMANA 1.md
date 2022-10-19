@@ -1,4 +1,19 @@
-### Semana 1  
-   1. [Fundamentos de pruebas I](./Semana%201/Fundamentos%20de%20las%20pruebas%20I/README.md)
-   2. [Fundamentos de pruebas II](./Semana%201/Fundamentos%20de%20las%20pruebas%20II/README.md)
-   3. [Prueba a lo largo del ciclo de Vida de Desarrollo de Software (SDLC)](./Semana%202/Prueba%20a%20lo%20largo%20del%20ciclo%20de%20Vida%20de%20Desarrollo%20de%20Software/README.md) 
+# Fundamentos de las pruebas I
+
+# Objetivos
+- Entender los fundamentos de las mejores prácticas de las pruebas de software.
+- Entender los principios de las pruebas y calidad.
+- Comenzar con los procesos de pruebas
+
+# Contenido de la sesión
+- ISTQB
+- ¿Qué es Probar?
+- ¿Por qué probar es necesario?
+- 7 principios de las pruebas
+- Procesos de las pruebas
+- Ejercicios
+
+
+# :books: Para aprender mas
+
+[Programa de Estudio nivel básico ISTQB / Páginas 18-24](https://es.sstqb.com/_files/ugd/acfdb9_743bf3d31dde49578c94d97e5b96b9da.pdf)
