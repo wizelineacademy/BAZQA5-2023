@@ -85,7 +85,6 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/UJCDTYEqpFq
 - [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)
 - [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91) ***CONFIRMAR SI ESTA DISPONIBLE PARA ONDEMAND 
 - [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)
-- [Karla Espiritu](https://calendly.com/karla-espiritu/qa-baz-istqb)No disponible
 - [Héctor Hurtado](https://calendly.com/hectorhurtadof/baz-mentoria-1-1)
 - [Marco Olivares](https://calendly.com/marco-olivares/baz-mentoria-1-1)
 - [Grisselle Esquivel](https://calendly.com/grissell-esquivel/baz-mentoria-1-1)
