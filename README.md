@@ -81,11 +81,11 @@ Para agendar una mentoría personalizada en línea con alguno de los mentores, s
 Selecciona la liga de abajo de cualquiera de los mentores, te abrirá su calendario con la disponibilidad por día y horarios. Elige el que mejor se acomode a tu necesidad.
 Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/UJCDTYEqpFqxbA7WA) al final de tu mentoría.
 
+- [Eduardo Lopez] TODO Agregar calendly
 - [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)
-- [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91)
+- [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91) ***CONFIRMAR SI ESTA DISPONIBLE PARA ONDEMAND 
 - [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)
-- [Karla Espiritu](https://calendly.com/karla-espiritu/qa-baz-istqb)
-- [Elizabeth Perez](https://calendly.com/elizabeth-perez-melendez/baz-mentoria-1-1)- No disponible
+- [Karla Espiritu](https://calendly.com/karla-espiritu/qa-baz-istqb)No disponible
 - [Héctor Hurtado](https://calendly.com/hectorhurtadof/baz-mentoria-1-1)
 - [Marco Olivares](https://calendly.com/marco-olivares/baz-mentoria-1-1)
 - [Grisselle Esquivel](https://calendly.com/grissell-esquivel/baz-mentoria-1-1)
