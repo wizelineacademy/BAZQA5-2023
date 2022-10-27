@@ -117,7 +117,7 @@ Si requieres de más mentorías, puedes agendarlas con los siguientes mentores.
 - [Alejandro Garduño](https://calendly.com/agarduno_wize/baz-mentorias-1-1)
 - [Victor Morales](https://calendly.com/vicmorales/baz-mentorias-1-1)
 - [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)
-- [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91) ***CONFIRMAR SI ESTA DISPONIBLE PARA ONDEMAND 
+- [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91)
 - [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)
 - [Héctor Hurtado](https://calendly.com/hectorhurtadof/baz-mentoria-1-1)
 - [Marco Olivares](https://calendly.com/marco-olivares/baz-mentoria-1-1)
