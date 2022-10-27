@@ -99,13 +99,13 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/vHhoyDqRDuB
 | 1036560     | EDGAR ISIDRO BOLAÑOS RODRIGUEZ         | [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91)         |
 | 85810       | KARLA VERONICA REYES TREJO             | [Narda Ballesteros ](https://calendly.com/nardaballesteros/baz-mentoria-1-1)  |
 | 1031454     | MYRIAM SANCHEZ MARTINEZ                | [Narda Ballesteros ](https://calendly.com/nardaballesteros/baz-mentoria-1-1)  |
-| 92952       | RUBEN URIEL GARCIA PATRON              | [Eduardo Lopez]()                                                             |
-| 998740      | RICARDO VARINAS MONDRAGON              | [Eduardo Lopez]()                                                             |
-| 57274       | SAMUEL MONTIEL SANTOS                  | [Eduardo Lopez]()                                                             |
-| 49165       | SANDRA BRAVO PERALTA                   | [Victor Moralesz]()                                                           |
-| 961175      | SERGIO DEL OLMO AGUILAR                | [Victor Morales]()                                                            |
-| 1961188     | CLAUDIA NOHEMI MIRANDA VILDOZOLA       | [Alejandro Garduño]()                                                         |
-| 943834      | JIMENA YAEL TINAJERO HERNANDEZ         | [Alejandro Garduño]()                                                         |
+| 92952       | RUBEN URIEL GARCIA PATRON              | [Eduardo Lopez](https://calendly.com/eduardo-contreras/baz-mentorias-1-1)     |
+| 998740      | RICARDO VARINAS MONDRAGON              | [Eduardo Lopez](https://calendly.com/eduardo-contreras/baz-mentorias-1-1)     |
+| 57274       | SAMUEL MONTIEL SANTOS                  | [Eduardo Lopez](https://calendly.com/eduardo-contreras/baz-mentorias-1-1)     |
+| 49165       | SANDRA BRAVO PERALTA                   | [Victor Morales](https://calendly.com/vicmorales/baz-mentorias-1-1)           |
+| 961175      | SERGIO DEL OLMO AGUILAR                | [Victor Morales](https://calendly.com/vicmorales/baz-mentorias-1-1)           |
+| 1961188     | CLAUDIA NOHEMI MIRANDA VILDOZOLA       | [Alejandro Garduño](https://calendly.com/agarduno_wize/baz-mentorias-1-1)     |
+   | 943834      | JIMENA YAEL TINAJERO HERNANDEZ         | [Alejandro Garduño](https://calendly.com/agarduno_wize/baz-mentorias-1-1)  |
 | 64564       | ALAN ALEXIS DOMINGUEZ PEREZ            | [Grissell Esquivel](https://calendly.com/grissell-esquivel/baz-mentoria-1-1)  |
 | 88018       | CECILIA MIROSLAVA MIRANDA NAJERA       | [Grissell Esquivel](https://calendly.com/grissell-esquivel/baz-mentoria-1-1)  |
 | 1078927     | SANDRA MARGARITA MIRANDA COLIN         | [Ricardo Rodriguez ](https://calendly.com/ricardo-rodriguezr/baz-mentoria-1-1)|
@@ -113,7 +113,9 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/vHhoyDqRDuB
 
 Si requieres de más mentorías, puedes agendarlas con los siguientes mentores. 
 
-- [Eduardo Lopez] 
+- [Eduardo Lopez](https://calendly.com/eduardo-contreras/baz-mentorias-1-1)
+- [Alejandro Garduño](https://calendly.com/agarduno_wize/baz-mentorias-1-1)
+- [Victor Morales](https://calendly.com/vicmorales/baz-mentorias-1-1)
 - [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)
 - [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91) ***CONFIRMAR SI ESTA DISPONIBLE PARA ONDEMAND 
 - [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)
