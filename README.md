@@ -83,12 +83,12 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/vHhoyDqRDuB
 
 ### Mentores Asignados
 
-| ID Empleado | Nombre                                 | Mentor |
-| ----------: | :----------------------------------    | :-------------------------- |
-| 314511      | GERMAN HERRERA BAZAN                   | [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)        |
-| 1057855     | RAQUEL BERENICE PORRAS HURTADO         | [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)        |
-| 945028      | LEOPOLDO PRADO PEREZ                   | [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)        |
-| 1031584     | ALEJANDRO PALIZADA SANCHEZ             | [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)    |
+| ID Empleado | Nombre                                                          | Mentor |
+| ----------: | :----------------------------------                             | :-------------------------- |
+| 314511      | [GERMAN HERRERA BAZAN](gherrerab@elektra.com.mx)                | [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)        |
+| 1057855     | [RAQUEL BERENICE PORRAS HURTADO]         | [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)        |
+| 945028      | [LEOPOLDO PRADO PEREZ]                   | [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)        |
+| 1031584     | [ALEJANDRO PALIZADA SANCHEZ]             | [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)    |
 | 1047106     | IRAN JESUS MONROY ROMERO               | [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)    |
 | 1032910     | BEATRIZ OJEDA SANCHEZ                  | [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1).   |
 | 1065127     | CARLOS ALBERTO CORTES SANCHEZ          | [Marco Olivares](https://calendly.com/marco-olivares/baz-mentoria-1-1)        |
