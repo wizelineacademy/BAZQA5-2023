@@ -73,15 +73,48 @@ En la 3er semana se te agendará la sesión y te notificaremos por correo el dí
 - Para poder presentar tu proyecto final, debes contar con un mínimo de **3 mentorías on-demand** con tu mentor asignado.
 - Se tomará en cuenta tu participación en sesiones presenciales y virtuales. 
 
-# V. Agenda tu mentoría on-demand 📆
-[Asignaciones]()
+# V. Agenda tu mentoría📆
+
+Cada alumno/mentee debera contar con al menos 1 mentoria agendada por cada `Semana` del curso.
+
+Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/vHhoyDqRDuBwr7tTA) al final de tu mentoría.
+
+### Mentores Asignados
+
+| ID Empleado | Nombre                              | Mentor |
+| ----------: | :---------------------------------- | :-------------------------- |
+| 314511      | GERMAN HERRERA BAZAN                        | [Ana Anguiano](https://github.com/anaacruz)              |
+| 1057855     | RAQUEL BERENICE PORRAS HURTADO                       | [Ana Anguiano](https://github.com/anaacruz)              |
+| 945028      | LEOPOLDO PRADO PEREZ                     | [Michel Torres](https://github.com/mtorres0)             |
+| 1031584     | ALEJANDRO PALIZADA SANCHEZ                      | [Michel Torres](https://github.com/mtorres0)             |
+| 1047106     | IRAN JESUS MONROY ROMERO                       | [Josué Quiñonez](https://github.com/JosueQuinonesRivera) |
+| 1032910     | BEATRIZ OJEDA SANCHEZ                        | [Josué Quiñonez](https://github.com/JosueQuinonesRivera) |
+| 1065127     | CARLOS ALBERTO CORTES SANCHEZ                       | [Uriel Pachecho](https://github.com/VictorUrielP)        |
+| 948255      | IGNACIO ALONSO DE LA CRUZ GARCIA                   | [Uriel Pachecho](https://github.com/VictorUrielP)        |
+| 152496      | LETICIA QUEZADA CALZADA                        | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 1031636     | ALIN PAOLA MEJIA SIERRA                       | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 762778      | ALEJANDRA BETZABE LOPEZ HERNANDEZ                        | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 1036560     | EDGAR ISIDRO BOLAÑOS RODRIGUEZ                       | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 85810       | KARLA VERONICA REYES TREJO                        | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 1031454     | MYRIAM SANCHEZ MARTINEZ                       | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 92952       | RUBEN URIEL GARCIA PATRON                        | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 998740      | RICARDO VARINAS MONDRAGON                       | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 57274       | SAMUEL MONTIEL SANTOS                        | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 49165       | SANDRA BRAVO PERALTA                       | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 961175      | SERGIO DEL OLMO AGUILAR                       | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 1961188     | CLAUDIA NOHEMI MIRANDA VILDOZOLA                       | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 943834      | JIMENA YAEL TINAJERO HERNANDEZ                      | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 64564       | ALAN ALEXIS DOMINGUEZ PEREZ                      | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 88018       | CECILIA MIROSLAVA MIRANDA NAJERA                      | [Alejandro Martínez](https://github.com/alejandrombWize) |
+| 1078927     | SANDRA MARGARITA MIRANDA COLIN                      | [Alejandro Martínez](https://github.com/alejandrombWize) |
+
 
 Para agendar una mentoría personalizada en línea con alguno de los mentores, sigue estas instrucciones:
 
 Selecciona la liga de abajo de cualquiera de los mentores, te abrirá su calendario con la disponibilidad por día y horarios. Elige el que mejor se acomode a tu necesidad.
 Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/UJCDTYEqpFqxbA7WA) al final de tu mentoría.
 
-- [Eduardo Lopez] TODO Agregar calendly
+- [Eduardo Lopez] 
 - [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)
 - [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91) ***CONFIRMAR SI ESTA DISPONIBLE PARA ONDEMAND 
 - [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)
