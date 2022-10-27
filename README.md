@@ -116,6 +116,7 @@ Si requieres de más mentorías, puedes agendarlas con los siguientes mentores.
 - [Victor Morales](https://calendly.com/vicmorales/baz-mentorias-1-1) 
 - [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91) 
 - [Héctor Hurtado](https://calendly.com/hectorhurtadof/baz-mentoria-1-1) Disponible a partir del 1ro de Noviembre
+- [Karla Espíritu](https://calendly.com/karla-espiritu/qa-baz-istqb)
 
 
 # VI. PROYECTO BAZ SUPERAPP / BANCA DIGITAL (Asignado por Líder de Gremio)
