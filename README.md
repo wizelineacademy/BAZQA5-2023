@@ -6,7 +6,7 @@ Bienvenido a tu capacitación de QA que consta de 3 semanas de entrenamiento.
 # II. Información general del entrenamiento
 El objetivo de esta etapa es brindarte la oportunidad de actualizar tus conocimientos y habilidades en desarrollo, de la mano de los ingenieros de Wizeline. El entrenamiento consta de los siguientes elementos:
 
-[Calendario](https://github.com/wizelineacademy/BAZQA32022/blob/main/Screen%20Shot%202022-10-27%20at%2011.17.56.png)
+[Calendario]()
 
 [Liga Acceso Telegram grupal](https://t.me/+HVNFH3VPuW9lODgx)
 
