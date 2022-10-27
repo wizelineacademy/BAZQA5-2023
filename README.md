@@ -75,7 +75,9 @@ En la 3er semana se te agendará la sesión y te notificaremos por correo el dí
 
 # V. Agenda tu mentoría📆
 
-Cada alumno/mentee debera contar con al menos 1 mentoria agendada por cada `Semana` del curso.
+Cada alumno/mentee deberá contar con al menos 1 mentoria agendada por cada `Semana` del curso con su mentor asignado.
+Para agendar una mentoría personalizada en línea, sigue estas instrucciones:
+Selecciona la liga de abajo de tu mentor, te abrirá su calendario con la disponibilidad por día y horarios. Elige el que mejor se acomode a tu necesidad.
 
 Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/vHhoyDqRDuBwr7tTA) al final de tu mentoría.
 
@@ -109,10 +111,8 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/vHhoyDqRDuB
 | 1078927     | SANDRA MARGARITA MIRANDA COLIN         | [Ricardo Rodriguez ](https://calendly.com/ricardo-rodriguezr/baz-mentoria-1-1)|
 
 
+Para agendar más mentorías en línea con algún otro, sigue estas instrucciones:
 Para agendar una mentoría personalizada en línea con alguno de los mentores, sigue estas instrucciones:
-
-Selecciona la liga de abajo de cualquiera de los mentores, te abrirá su calendario con la disponibilidad por día y horarios. Elige el que mejor se acomode a tu necesidad.
-Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/UJCDTYEqpFqxbA7WA) al final de tu mentoría.
 
 - [Eduardo Lopez] 
 - [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)
