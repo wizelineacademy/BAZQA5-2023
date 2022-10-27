@@ -17,7 +17,7 @@ El objetivo de esta etapa es brindarte la oportunidad de actualizar tus conocimi
 
 - En las sesiones en línea, es **obligatorio** tener la cámara prendida.
 - Debes asisitir a mínimo 5 sesiones presenciales para tener derecho a presentar tu Proyecto Final
-- En caso de no poder asistir a alguna sesión presencial y/o virtual, debes informarlo a tu líder de gremio con copia a Contacto Wizeline Academy/Telegram 
+- En caso de no poder asistir a alguna sesión presencial y/o virtual, debes informarlo a tu líder de gremio con copia a [Lluvia Martínez](lluvia.martinez@gesech.com) y a Contacto Wizeline Academy/Telegram 
 
 **Mentorías Grupales**
 - Son sesiones de mentoría en sitio que se llevan a cabo después de las sesiones en vivo para reforzar conocimientos y aclarar dudas. La duración de estas mentorías es de 2 horas.
@@ -111,8 +111,7 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/vHhoyDqRDuB
 | 1078927     | SANDRA MARGARITA MIRANDA COLIN         | [Ricardo Rodriguez ](https://calendly.com/ricardo-rodriguezr/baz-mentoria-1-1)|
 
 
-Para agendar más mentorías en línea con algún otro, sigue estas instrucciones:
-Para agendar una mentoría personalizada en línea con alguno de los mentores, sigue estas instrucciones:
+Si requieres de más mentorías, puedes agendarlas con los siguientes mentores. 
 
 - [Eduardo Lopez] 
 - [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)
