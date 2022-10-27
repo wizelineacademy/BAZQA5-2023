@@ -105,7 +105,7 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/vHhoyDqRDuB
 | 49165       | SANDRA BRAVO PERALTA                   | [Victor Morales](https://calendly.com/vicmorales/baz-mentorias-1-1)           |
 | 961175      | SERGIO DEL OLMO AGUILAR                | [Victor Morales](https://calendly.com/vicmorales/baz-mentorias-1-1)           |
 | 1961188     | CLAUDIA NOHEMI MIRANDA VILDOZOLA       | [Alejandro Garduño](https://calendly.com/agarduno_wize/baz-mentorias-1-1)     |
-   | 943834      | JIMENA YAEL TINAJERO HERNANDEZ         | [Alejandro Garduño](https://calendly.com/agarduno_wize/baz-mentorias-1-1)  |
+| 943834      | JIMENA YAEL TINAJERO HERNANDEZ         | [Alejandro Garduño](https://calendly.com/agarduno_wize/baz-mentorias-1-1)     |
 | 64564       | ALAN ALEXIS DOMINGUEZ PEREZ            | [Grissell Esquivel](https://calendly.com/grissell-esquivel/baz-mentoria-1-1)  |
 | 88018       | CECILIA MIROSLAVA MIRANDA NAJERA       | [Grissell Esquivel](https://calendly.com/grissell-esquivel/baz-mentoria-1-1)  |
 | 1078927     | SANDRA MARGARITA MIRANDA COLIN         | [Ricardo Rodriguez ](https://calendly.com/ricardo-rodriguezr/baz-mentoria-1-1)|
@@ -113,17 +113,9 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/vHhoyDqRDuB
 
 Si requieres de más mentorías, puedes agendarlas con los siguientes mentores. 
 
-- [Eduardo Lopez](https://calendly.com/eduardo-contreras/baz-mentorias-1-1)
-- [Alejandro Garduño](https://calendly.com/agarduno_wize/baz-mentorias-1-1)
-- [Victor Morales](https://calendly.com/vicmorales/baz-mentorias-1-1)
-- [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)
-- [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91)
-- [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)
-- [Héctor Hurtado](https://calendly.com/hectorhurtadof/baz-mentoria-1-1)
-- [Marco Olivares](https://calendly.com/marco-olivares/baz-mentoria-1-1)
-- [Grisselle Esquivel](https://calendly.com/grissell-esquivel/baz-mentoria-1-1)
-- [Narda Ballesteros](https://calendly.com/nardaballesteros/baz-mentoria-1-1)
-- [Ricardo Rodríguez](https://calendly.com/ricardo-rodriguezr/baz-mentoria-1-1)
+- [Victor Morales](https://calendly.com/vicmorales/baz-mentorias-1-1) 
+- [Abelardo Romo](https://calendly.com/abelardo-romo/baz-mentoria-1-91) 
+- [Héctor Hurtado](https://calendly.com/hectorhurtadof/baz-mentoria-1-1) Disponible a partir del 1ro de Noviembre
 
 
 # VI. PROYECTO BAZ SUPERAPP / BANCA DIGITAL (Asignado por Líder de Gremio)
