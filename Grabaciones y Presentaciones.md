@@ -14,5 +14,5 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - 📺 [Grabación Martes 1 Nov]()
 - [Jueves 3 Nov/Pruebas estáticas](https://drive.google.com/file/d/1LBK9cd-HuzdfY81Oqk7K0RhGUQVJp2kb/view?usp=sharing)
 - 📺 [Grabación Jueves 3 Nov]()
-- [Viernes 4 Nov/Técnicas de pruebas](https://drive.google.com/file/d/1Ut41i7esU41pCfBIFXTSCftZt8Ix4lmt/view?usp=sharing)
+- [Viernes 4 Nov/Técnicas de pruebas I](https://drive.google.com/file/d/1Ut41i7esU41pCfBIFXTSCftZt8Ix4lmt/view?usp=sharing)
 - 📺 [Grabación Viernes 4 Nov]()
