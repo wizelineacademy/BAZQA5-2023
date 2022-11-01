@@ -8,3 +8,11 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - 📺 [Grabación Jueves 27 Oct](https://drive.google.com/file/d/1CUhi1rUz0Ebevbl5TV4lJ6ns0npX7oOv/view?usp=sharing)
 - [Viernes 28 Oct/Prueba a lo largo del ciclo de vida de desarrollo de software SDLC](https://drive.google.com/file/d/1AJgQJGVvs2R9qUe1hvbDIkuydrRk7818/view?usp=sharing)
 - 📺 [Grabación Viernes 28 Oct](https://drive.google.com/file/d/11KNZyc_64BugPf2_MTkni8lUc2dYcKEH/view?usp=sharing)
+
+# Semana 2
+- [Martes 1 Nov/]()
+- 📺 [Grabación Martes 1 Nov]()
+- [Jueves 3 Nov/]()
+- 📺 [Grabación Jueves 3 Nov]()
+- [Viernes 4 Nov/]()
+- 📺 [Grabación Viernes 4 Nov]()
