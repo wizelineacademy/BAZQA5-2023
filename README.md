@@ -88,7 +88,7 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/vHhoyDqRDuB
 | 314511      | GERMAN HERRERA BAZAN                   | [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)        |
 | 1057855     | RAQUEL BERENICE PORRAS HURTADO         | [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)        |
 | 945028      | LEOPOLDO PRADO PEREZ                   | [Luca Bacasehua](https://calendly.com/luca-bacasehua/baz-mentoria-1-1)        |
-| 1031584     | ALEJANDRO PALIZADA SANCHEZ             | [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)    |
+| 1031584     | ALEJANDRO PALIZADA SANCHEZ*            | [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)    |
 | 1047106     | IRAN JESUS MONROY ROMERO               | [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1)    |
 | 1032910     | BEATRIZ OJEDA SANCHEZ                  | [Fernando Flores](https://calendly.com/lfernandofloresc/baz-mentorias-1-1).   |
 | 1065127     | CARLOS ALBERTO CORTES SANCHEZ          | [Marco Olivares](https://calendly.com/marco-olivares/baz-mentoria-1-1)        |
