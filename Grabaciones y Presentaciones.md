@@ -19,7 +19,7 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 
 # Semana 2
 - [Martes 8 Nov/Técnicas de prueba II](https://docs.google.com/presentation/d/1qYWEOuBft-1geeK86mX67q9bDDCT4wlC/edit?usp=sharing&ouid=116453789246406595459&rtpof=true&sd=true)
-- 📺 [Grabación Martes 8 Nov]()
+- 📺 [Grabación Martes 8 Nov](https://drive.google.com/file/d/1TJc8o-mLqDYhxmGw_aP71DVx8QJtinY4/view?usp=sharing)
 - [Jueves 10 Nov/Técnicas de prueba III/Administración de pruebas I](https://docs.google.com/presentation/d/1SsBWJmmpLxTizh1huN46q2yhX021Rlen0QDl1XGHWYo/edit?usp=sharing)
 - 📺 [Grabación Jueves 10 Nov]()
 - [Viernes 11 Nov/Administración de pruebas II](https://docs.google.com/presentation/d/1SsBWJmmpLxTizh1huN46q2yhX021Rlen0QDl1XGHWYo/edit?usp=sharing)
