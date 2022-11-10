@@ -18,9 +18,9 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - 📺 [Grabación Viernes 4 Nov](https://drive.google.com/file/d/1hHYJCsaNnS_TncoTy-3xWKzmOwj4jrNW/view?usp=sharing)
 
 # Semana 3
-- [Martes 8 Nov/Técnicas de prueba II](https://docs.google.com/presentation/d/1qYWEOuBft-1geeK86mX67q9bDDCT4wlC/edit?usp=sharing&ouid=116453789246406595459&rtpof=true&sd=true)
+- [Martes 8 Nov/Técnicas de prueba II]([https://docs.google.com/presentation/d/1qYWEOuBft-1geeK86mX67q9bDDCT4wlC/edit?usp=sharing&ouid=116453789246406595459&rtpof=true&sd=true](https://drive.google.com/file/d/1_GcnRk2U6Fhqag-YZpgtUUnqL-LhHvJZ/view?usp=sharing)
 - 📺 [Grabación Martes 8 Nov](https://drive.google.com/file/d/1TJc8o-mLqDYhxmGw_aP71DVx8QJtinY4/view?usp=sharing)
-- [Jueves 10 Nov/Técnicas de prueba III/Administración de pruebas I](https://docs.google.com/presentation/d/1SsBWJmmpLxTizh1huN46q2yhX021Rlen0QDl1XGHWYo/edit?usp=sharing)
+- [Jueves 10 Nov/Técnicas de prueba III/Administración de pruebas I](https://drive.google.com/file/d/1m3Q48uZWGwRkSqzf02nsv8S3q0qmsqZm/view?usp=sharing)(https://drive.google.com/file/d/1NE4TIbjBkzP7m2feZZYfq4RtlRxs5RpO/view?usp=sharing)
 - 📺 [Grabación Jueves 10 Nov]()
-- [Viernes 11 Nov/Administración de pruebas II](https://docs.google.com/presentation/d/1SsBWJmmpLxTizh1huN46q2yhX021Rlen0QDl1XGHWYo/edit?usp=sharing)
+- [Viernes 11 Nov/Administración de pruebas II](https://drive.google.com/file/d/1avQjadgg7RzUsmE7adXR8-m2Bw0fkQvI/view?usp=sharing)
 - 📺 [Grabación Viernes 11 Nov]()
