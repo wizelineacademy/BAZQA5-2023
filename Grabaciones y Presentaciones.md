@@ -13,11 +13,11 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - [Martes 1 Nov/Enfoques de prueba](https://drive.google.com/file/d/1YRHUYZ2nHPIUw0rDUNNYxEhXOLJVNiPd/view?usp=sharing)
 - 📺 [Grabación Martes 1 Nov](https://drive.google.com/file/d/1SY4EANlpNaJNqYsbVIg-JBhGFeDmnFNf/view?usp=sharing)
 - [Jueves 3 Nov/Pruebas estáticas](https://drive.google.com/file/d/1LBK9cd-HuzdfY81Oqk7K0RhGUQVJp2kb/view?usp=sharing)
-- 📺 [Grabación Jueves 3 Nov](https://drive.google.com/file/d/17J-goRmh8sP1FC8I5BGDmjeos-nangNG/view?usp=sharing)
+- 📺 [Grabación Jueves 3 Nov](https://drive.google.com/file/d/1hDsQ8uEs_eeZQOwW-Au1b149usRagpLH/view?usp=sharing)
 - [Viernes 4 Nov/Técnicas de pruebas I](https://drive.google.com/file/d/1Ut41i7esU41pCfBIFXTSCftZt8Ix4lmt/view?usp=sharing)
 - 📺 [Grabación Viernes 4 Nov](https://drive.google.com/file/d/1hHYJCsaNnS_TncoTy-3xWKzmOwj4jrNW/view?usp=sharing)
 
-# Semana 2
+# Semana 3
 - [Martes 8 Nov/Técnicas de prueba II](https://docs.google.com/presentation/d/1qYWEOuBft-1geeK86mX67q9bDDCT4wlC/edit?usp=sharing&ouid=116453789246406595459&rtpof=true&sd=true)
 - 📺 [Grabación Martes 8 Nov](https://drive.google.com/file/d/1TJc8o-mLqDYhxmGw_aP71DVx8QJtinY4/view?usp=sharing)
 - [Jueves 10 Nov/Técnicas de prueba III/Administración de pruebas I](https://docs.google.com/presentation/d/1SsBWJmmpLxTizh1huN46q2yhX021Rlen0QDl1XGHWYo/edit?usp=sharing)
