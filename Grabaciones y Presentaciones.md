@@ -24,4 +24,4 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - [Administración de pruebas I](https://drive.google.com/file/d/1gio_YYspIS83RZ6QBx1z61gf02g6YwnE/view?usp=sharing)
 - 📺 [Grabación Jueves 10 Nov](https://drive.google.com/file/d/1sPC98qKD47XZs2P4W9xn4JGGhvkc6BHi/view?usp=sharing)
 - [Viernes 11 Nov/Administración de pruebas II](https://drive.google.com/file/d/17i-ld0LdQY3nUhcNMf0Wq68YvyEqWNtm/view?usp=sharing)
-- 📺 [Grabación Viernes 11 Nov]()
+- 📺 [Grabación Viernes 11 Nov](https://drive.google.com/file/d/12EIwv5D8DFbGSTaTeASbEaHn4Zn-sCWm/view?usp=sharing)
