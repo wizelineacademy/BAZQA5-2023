@@ -3,37 +3,40 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 
 # PRE-ENTRENAMIENTO
 # Semana 1
-- [Lunes 22 mayo - Repaso Git / ]()
+- [Lunes 22 mayo - Onboarding Git]()
+- [Lunes 22 mayo - Fundamentos de Python]()
+- [Lunes 22 mayo - Revisión de Pycharm]()
 - 📺 [Grabación Lunes 22 mayo]()
-- [Martes 23 mayo - Repaso Pycharm ]()
+- [Martes 23 mayo - Fundamentos de Python y Pruebas Unitarias]()
+- [Martes 23 mayo - Pytest]()
 - 📺 [Grabación Martes 23 mayo ]()
 
 # Semana 2
-- [Lunes 27 Mar - Repaso Python - Ejercicios OP]() 
-- 📺 [Grabación Lunes 27 Mar]()
-- [Martes 28 Mar - Configuración de dispositivos externos]()
-- 📺 [Grabación Martes 28 Mar]()
+- [Lunes 29 mayo -  Pycharm]() 
+- 📺 [Grabación Lunes 29 mayo]()
+- [Martes 30 mayo - Automatización con Agile (Git)]()
+- 📺 [Grabación Martes 30 mayo]()
 
 # Semana 3
-- [Lunes 10 Abr - TDD/BDD]()
-- 📺 [Grabación Lunes 10 Abr]()
-- [Martes 11 Abr - API Testing]()
-- 📺 [Grabación Martes 11 Abr]()
+- [Lunes 5 junio - API Testing y Práctico]()
+- 📺 [Grabación Lunes 5 junio]()
+- [Martes 6 junio - APIUM Teórico y Práctico]()
+- 📺 [Grabación Martes 6 junio]()
 
 # Semana 4
-- [Lunes 17 Abr - POO]()
-- 📺 [Grabación Lunes 17 Abr]()
-- [Martes 18 Abr - Pycharm]()
-- 📺 [Grabación Martes 18 Abr]()
+- [Lunes 12 junio - Configuración de dispositivos expternos (Revisión de Appium)]()
+- 📺 [Grabación Lunes 12 junio]()
+- [Martes 13 junio - TDD/BDD]()
+- 📺 [Grabación Martes 13 junio]()
 
 # Semana 5
-- [Lunes 24 Abr - Front End Python]()
-- 📺 [Grabación Lunes 24 Abr]()
-- [Martes 25 Abr - Automatización mobile Part 1]()
-- 📺 [Grabación Martes 25 Abr]()
+- [Lunes 19 junio - Repaso POO]()
+- 📺 [Grabación Lunes 19 junio]()
+- [Martes 20 junio - Front End Python Parte 1]()
+- 📺 [Grabación Martes 20 junio]()
 
 # Semana 6
-- [Lunes 24 Abr - Front End Python]()
-- 📺 [Grabación Lunes 24 Abr]()
-- [Martes 25 Abr - Automatización mobile Part 1]()
-- 📺 [Grabación Martes 25 Abr]()
+- [Lunes 26 junio - Front End Python Parte 2]()
+- 📺 [Grabación Lunes 26 junio]()
+- [Martes 27 junio - Automatización mobile: Implementación de Behave]()
+- 📺 [Grabación Martes 27 junio]()
