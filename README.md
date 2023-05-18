@@ -94,12 +94,12 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/J7Y34sjhXYg
 | ----------: | :----------------------------------    | :-------------------------- |
 | Mentor               | Mentee                          |  Liga para agendar mentoria                |
 | `Santiago Melo`  | - GERMAN HERRERA BAZAN <br/> - ROBERTO CARLOS CHAVEZ GARCIA  | [Liga]()
-| `Moises Rivas Navarro`  |  - RICARDO VARINAS MONDRAGON  <br/> - IGNACIO ALONSO DE LA CRUZ GARCIA  | [Liga](https://calendly.com/moises-rivas-1)
-| `Fer Badillo Diaz de Leon`       | - LETICIA QUEZADA CALZADA   <br/> - CECILIA MIROSLAVA MIRANDA NAJERA <br/>- BEATRIZ OJEDA SANCHEZ     | [Liga](https://calendly.com/fdiazw/1h) |
-| `Narda Ballesteros Reyes`    | - LORENA JAQUELINE MENDEZ SOTELO <br/> - JIMENA YAEL TINAJERO HERNANDEZ| [Liga](https://calendly.com/nardaballesteros) |
-| `Rulo Moctezuma`       | - KARLA VERONICA REYES TREJO <br/> - CARLOS MIGUEL GOMEZ ZAMORA| [Liga]()
+| `Moises Rivas Navarro`  |  - RICARDO VARINAS MONDRAGON  <br/> - LETICIA QUEZADA CALZADA| [Liga](https://calendly.com/moises-rivas-1)
+| `Fer Badillo Diaz de Leon`       | - KARLA VERONICA REYES TREJO <br/> - CARLOS MIGUEL GOMEZ ZAMORA  | [Liga](https://calendly.com/fdiazw/1h) |
+| `Narda Ballesteros Reyes`    | - LORENA JAQUELINE MENDEZ SOTELO <br/> BEATRIZ - OJEDA SANCHEZ     | [Liga](https://calendly.com/nardaballesteros) |
+| `Rulo Moctezuma`       | - CECILIA MIROSLAVA MIRANDA NAJERA <br/> - IGNACIO ALONSO DE LA CRUZ GARCIA  | [Liga]()
 
-<br/> - RICARDO VARINAS MONDRAGON
+
 
 # VII. Contacto Wizeline DSA
 Si tienes alguna duda sobre el programa, logística, accesos, etc., por favor contacta al equipo de Wizeline DSA
