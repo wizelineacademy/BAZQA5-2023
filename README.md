@@ -93,10 +93,10 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/J7Y34sjhXYg
 | ID Empleado | Nombre                                 | Mentor |
 | ----------: | :----------------------------------    | :-------------------------- |
 | Mentor               | Mentee                          |  Liga para agendar mentoria                |
-| `Santiago Melo`  | - GERMAN HERRERA BAZAN <br/> - ROBERTO CARLOS CHAVEZ GARCIA  | [Liga](https://calendly.com/moises-rivas-1)
+| `Santiago Melo`  | - GERMAN HERRERA BAZAN <br/> - ROBERTO CARLOS CHAVEZ GARCIA  | [Liga]()
 | `Moises Rivas Navarro`  |  - RICARDO VARINAS MONDRAGON  <br/> - IGNACIO ALONSO DE LA CRUZ GARCIA  | [Liga](https://calendly.com/moises-rivas-1)
-| `Fer Badillo Diaz de Leon`       | - LETICIA QUEZADA CALZADA   <br/> - CECILIA MIROSLAVA MIRANDA NAJERA  | [Liga](https://calendly.com/fdiazw/1h) |
-| `Narda Ballesteros Reyes`    | - BEATRIZ OJEDA SANCHEZ  <br/> - LORENA JAQUELINE MENDEZ SOTELO <br/> - JIMENA YAEL TINAJERO HERNANDEZ| [Liga](https://calendly.com/nardaballesteros) |
+| `Fer Badillo Diaz de Leon`       | - LETICIA QUEZADA CALZADA   <br/> - CECILIA MIROSLAVA MIRANDA NAJERA <br/>- BEATRIZ OJEDA SANCHEZ     | [Liga](https://calendly.com/fdiazw/1h) |
+| `Narda Ballesteros Reyes`    | - LORENA JAQUELINE MENDEZ SOTELO <br/> - JIMENA YAEL TINAJERO HERNANDEZ| [Liga](https://calendly.com/nardaballesteros) |
 | `Rulo Moctezuma`       | - KARLA VERONICA REYES TREJO <br/> - CARLOS MIGUEL GOMEZ ZAMORA| [Liga]()
 
 <br/> - RICARDO VARINAS MONDRAGON
