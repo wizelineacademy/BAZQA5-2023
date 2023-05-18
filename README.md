@@ -95,9 +95,11 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/J7Y34sjhXYg
 | Mentor               | Mentee                          |  Liga para agendar mentoria                |
 | `Santiago Melo`  | - GERMAN HERRERA BAZAN <br/> - ROBERTO CARLOS CHAVEZ GARCIA  | [Liga]()
 | `Moises Rivas Navarro`  |  - RICARDO VARINAS MONDRAGON  <br/> - LETICIA QUEZADA CALZADA| [Liga](https://calendly.com/moises-rivas-1)
+| `Rulo Moctezuma`       | - CECILIA MIROSLAVA MIRANDA NAJERA <br/> - IGNACIO ALONSO DE LA CRUZ GARCIA | [Liga]()
+| `Narda Ballesteros Reyes`    | - LORENA JAQUELINE MENDEZ SOTELO <br/> - BEATRIZ OJEDA SANCHEZ     | [Liga](https://calendly.com/nardaballesteros) |
 | `Fer Badillo Diaz de Leon`       | - KARLA VERONICA REYES TREJO <br/> - CARLOS MIGUEL GOMEZ ZAMORA  | [Liga](https://calendly.com/fdiazw/1h) |
-| `Narda Ballesteros Reyes`    | - LORENA JAQUELINE MENDEZ SOTELO <br/> BEATRIZ - OJEDA SANCHEZ     | [Liga](https://calendly.com/nardaballesteros) |
-| `Rulo Moctezuma`       | - CECILIA MIROSLAVA MIRANDA NAJERA <br/> - IGNACIO ALONSO DE LA CRUZ GARCIA  | [Liga]()
+
+
 
 
 
