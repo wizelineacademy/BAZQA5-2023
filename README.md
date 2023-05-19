@@ -90,9 +90,8 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/J7Y34sjhXYg
 
 ### Mentores Asignados
 
-| ID Empleado | Nombre                                 | Mentor |
-| ----------: | :----------------------------------    | :-------------------------- |
 | Mentor               | Mentee                          |  Liga para agendar mentoria                |
+|----------------------|---------------------------------|--------------------------------------------|               |
 | `Santiago Melo`  | - GERMAN HERRERA BAZAN <br/> - ROBERTO CARLOS CHAVEZ GARCIA  | [Liga]()
 | `Moises Rivas Navarro`  |  - RICARDO VARINAS MONDRAGON  <br/> - LETICIA QUEZADA CALZADA| [Liga](https://calendly.com/moises-rivas-1)
 | `Rulo Moctezuma`       | - CECILIA MIROSLAVA MIRANDA NAJERA <br/> - IGNACIO ALONSO DE LA CRUZ GARCIA | [Liga]()
