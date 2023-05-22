@@ -1,7 +1,7 @@
 # Digital Skills Accelerator Training - QA Automatización
 
 # I. Bienvenida
-Bienvenido a tu capacitación de QA que consta de 4 semanas de entrenamiento.
+Bienvenido a tu capacitación de QA Automatización que consta de 4 semanas de entrenamiento.
 
 # II. Información general del entrenamiento
 El objetivo de esta etapa es brindarte la oportunidad de actualizar tus conocimientos y habilidades en desarrollo, de la mano de los ingenieros de Wizeline. El entrenamiento consta de los siguientes elementos:
