@@ -41,9 +41,9 @@ Los temas están divididos en 6 semanas, 2 sesiones intensivas por semana.
 ## Pre-entrenamiento 
 
 ### Semana 1
-  1. [Git]()
-  2. [Fundamentos de Python]() 
-  3. [Pytest]()
+  1. [Git]
+  2. [Fundamentos de Python]
+  3. [Pytest]
   
 ### Semana 2
   1. [Pycharm]
