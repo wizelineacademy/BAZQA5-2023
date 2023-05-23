@@ -3,12 +3,8 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 
 # PRE-ENTRENAMIENTO
 # Semana 1
-- [Lunes 22 mayo - Onboarding Git]()
-- [Lunes 22 mayo - Fundamentos de Python]()
-- [Lunes 22 mayo - Revisión de Pycharm]()
+- [Lunes y martes 22, 23 mayo - Onboarding Git](https://docs.google.com/presentation/d/12V_IvXVxtzvTrZ9Xl7Vvm2TIh_igdfMctK8XlciEpGo/edit?usp=sharing)
 - 📺 [Grabación Lunes 22 mayo]()
-- [Martes 23 mayo - Fundamentos de Python y Pruebas Unitarias]()
-- [Martes 23 mayo - Pytest]()
 - 📺 [Grabación Martes 23 mayo ]()
 
 # Semana 2
