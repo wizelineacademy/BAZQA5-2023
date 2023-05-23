@@ -3,7 +3,7 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 
 # PRE-ENTRENAMIENTO
 # Semana 1
-- [Lunes y martes 22, 23 mayo - Onboarding Git](https://docs.google.com/presentation/d/12V_IvXVxtzvTrZ9Xl7Vvm2TIh_igdfMctK8XlciEpGo/edit?usp=sharing)
+- [Lunes y martes 22, 23 mayo - Pre-entrenamiento Python](https://drive.google.com/drive/folders/1nmYWYJn5bp0FKkF864RDuR2gLa2QNtHL?usp=sharing)
 - 📺 [Grabación Lunes 22 mayo]()
 - 📺 [Grabación Martes 23 mayo ]()
 
