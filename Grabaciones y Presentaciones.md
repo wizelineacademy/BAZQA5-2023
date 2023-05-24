@@ -3,7 +3,7 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 
 # PRE-ENTRENAMIENTO
 # Semana 1
-- [Lunes y martes 22, 23 mayo - Pre-entrenamiento Python](https://drive.google.com/drive/folders/1nmYWYJn5bp0FKkF864RDuR2gLa2QNtHL?usp=sharing)
+- [Lunes y martes 22, 23 mayo - Pre-entrenamiento Python](https://drive.google.com/file/d/1jJ8CNl5gbkOHY_r5dmvkbyGoudj3LcGg/view?usp=share_link)
 - 📺 [Grabación Lunes 22 mayo](https://drive.google.com/file/d/1XB87vxvSB8910IHGaaLr1NVWtohwtJ6o/view?usp=sharing)
 - 📺 [Grabación Martes 23 mayo ](https://drive.google.com/file/d/1frKeKCLFoKnY3Vmvkc75Xv2MTXbYD5uG/view?usp=share_link)
 
