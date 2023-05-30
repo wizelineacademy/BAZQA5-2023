@@ -8,9 +8,9 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - 📺 [Grabación Martes 23 mayo ](https://drive.google.com/file/d/1frKeKCLFoKnY3Vmvkc75Xv2MTXbYD5uG/view?usp=share_link)
 
 # Semana 2
-- [Lunes 29 mayo -  Pycharm](https://drive.google.com/file/d/1oqbfr1_mT4Ej2_ElCrWyAJUa_6swRchu/view?usp=share_link)
+- [Lunes 29 mayo -  Pycharm](https://drive.google.com/file/d/15ooBzp9CYI97zzgRYtKIUXWtyExsR2b7/view?usp=share_link)
 - 📺 [Grabación Lunes 29 mayo]()
-- [Martes 30 mayo - Automatización con Agile (Git)]()
+- [Martes 30 mayo - Automatización con Agile (Git)](https://drive.google.com/file/d/1dBpnRrWao_gyyFIGf7fCLlutk0KbbuDg/view?usp=share_link)
 - 📺 [Grabación Martes 30 mayo]()
 
 # Semana 3
