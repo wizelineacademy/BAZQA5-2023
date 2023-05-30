@@ -5,5 +5,5 @@ Juego de mesa favorito: Caras y Gestos
 Comida favorita: pollo en crema poblana
 lugar de nacimiento: Estado de México
 Musica: popy y rock
-conflictoTest
-conflicto2
+sin conflicto
+sin conflicto2
