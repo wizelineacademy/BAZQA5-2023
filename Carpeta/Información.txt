@@ -1,6 +1,17 @@
-Hola mi nombre es Lore, tengo  25 años .
+Hola mi nombre es Lore, tengo  25 anos .
+
 
 #Me gusta viajar.
 Hola
 
 Mi bebida favorita es la cerveza 
+
+Cambios nuevos
+
+Intento de nuevo cambio
+
+Otra vez
+
+Tema Baz
+Team
+>>>>>>> prueba_wizline
