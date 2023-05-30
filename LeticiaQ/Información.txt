@@ -6,3 +6,4 @@ Comida favorita: pollo en crema poblana
 lugar de nacimiento: Estado de México
 Musica: popy y rock
 conflicto
+conflicto2
