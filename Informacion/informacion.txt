@@ -1,7 +1,7 @@
 
-Nombre: julian Carlos Chavez Garcia
+Nombre: julian Carlos Chavez garcia
 
-Intereses: Viajar, conocer lugares nuevos, 
+Intereses: Viajar, conocer lugares nuevos, futbol
 
 
 pruebas 2223´2p3'hola
@@ -16,3 +16,7 @@ Ultimos cambios
 *****************************************
 
 pruebas
+
+**************************************************
+
+cambio rob
