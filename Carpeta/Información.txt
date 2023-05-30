@@ -2,3 +2,5 @@ Hola mi nombre es Lore, tengo  25 años .
 
 #Me gusta viajar.
 Hola
+
+Mi bebida favorita es la cerveza 
