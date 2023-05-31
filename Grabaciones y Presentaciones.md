@@ -9,9 +9,9 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 
 # Semana 2
 - [Lunes 29 mayo -  Pycharm](https://drive.google.com/file/d/15ooBzp9CYI97zzgRYtKIUXWtyExsR2b7/view?usp=share_link)
-- 📺 [Grabación Lunes 29 mayo]()
+- 📺 [Grabación Lunes 29 mayo](https://drive.google.com/file/d/1UugPb6sKlDK9FOIi5TASIjDZZihAbU_b/view?usp=share_link)
 - [Martes 30 mayo - Automatización con Agile (Git)](https://drive.google.com/file/d/1dBpnRrWao_gyyFIGf7fCLlutk0KbbuDg/view?usp=share_link)
-- 📺 [Grabación Martes 30 mayo]()
+- 📺 [Grabación Martes 30 mayo](https://drive.google.com/file/d/1SKoLSrytngAuOAUw3i7Hodl9BZFMsUZb/view?usp=share_link)
 
 # Semana 3
 - [Lunes 5 junio - API Testing y Práctico]()
