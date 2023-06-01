@@ -46,7 +46,7 @@ Los temas están divididos en 6 semanas, 2 sesiones intensivas por semana.
   
 ### Semana 2
   1. [Pycharm]
-  2. [Automatización con Agile (Git)]
+  2. [Automatización con Agile (Git)](https://docs.google.com/document/d/1UN25smVSkMu0J-W5ujUz_fT5WZFlTXu9_oQ6IK26Kdc/edit)
   
 ## Entrenamiento
 ### Semana 3
