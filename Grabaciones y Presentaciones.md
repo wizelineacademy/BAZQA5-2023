@@ -20,7 +20,7 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - 📺 [Grabación Martes 6 junio]
 
 # Semana 4
-- [Lunes 12 junio - Configuración de dispositivos expternos (Revisión de Appium)]()
+- [Lunes 12 junio - Configuración de dispositivos expternos (Revisión de Appium)]
 - 📺 [Grabación Lunes 12 junio]
 - [Martes 13 junio - TDD/BDD]
 - 📺 [Grabación Martes 13 junio]
