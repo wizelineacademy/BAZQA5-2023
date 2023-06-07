@@ -15,9 +15,9 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 
 # Semana 3
 - [Lunes 5 junio - API Testing y Práctico](https://drive.google.com/file/d/1x4ygO9dKtnAtg-wQhK7geIoozJBAzM2a/view?usp=drive_link)
-- 📺 [Grabación Lunes 5 junio]
-- [Martes 6 junio - APIUM Teórico y Práctico]
-- 📺 [Grabación Martes 6 junio]
+- 📺 [Grabación Lunes 5 junio](https://drive.google.com/file/d/1eNIX7ltmTFlPxQFMDScJb7j_GZkTCmSG/view?usp=drive_link)
+- [Martes 6 junio - APIUM Teórico y Práctico](https://drive.google.com/file/d/1jcHjhFSp-q797HB6RD1GrP3iJnerjWrH/view?usp=drive_link)
+- 📺 [Grabación Martes 6 junio](https://drive.google.com/file/d/1M6ZZVFNdtSm6NITykRM9CJNf6m_9NciY/view?usp=drive_link)
 
 # Semana 4
 - [Lunes 12 junio - Configuración de dispositivos expternos (Revisión de Appium)]
