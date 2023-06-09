@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "eeb5daad-3273-42fe-86a4-d0e14316fde0",
+		"name": "Proyecto pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24488057",
+		"_collection_link": "https://universal-comet-839245.postman.co/workspace/Team-Workspace~5d5eff05-0cdd-43d8-8f30-079c871737de/collection/24488057-eeb5daad-3273-42fe-86a4-d0e14316fde0?action=share&creator=24488057&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Escenarios_Positivos",
+			"item": [
+				{
+					"name": "ValidacionesPokemon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json() //Variable Gobal para guardar el json de respuesta\r",
+									"let name = myResponse.name;\r",
+									"\r",
+									"//Evaluar código de respuesta 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"//Validar tiempo de respuesta\r",
+									"pm.test(\"El tiempo de respuesta es 700ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(700);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El movimiento del pokemon es\" + \" \"+ name, function (){\r",
+									"    pm.expect(name).to.eql(pm.environment.get(\"move_name\"));\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{move_url}}",
+							"host": [
+								"{{move_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Elegir pokemon favorito",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json();//Variable Gobal para guardar el json de respuesta\r",
+									"console.log(JSON.parse(responseBody).moves[0].move) //Se imprime en consola el nombre y url del movimiento de pokemon.\r",
+									"\r",
+									"//Crea variables de ambiente con el nombre y la url del movimiento.\r",
+									"pm.environment.set(\"move_name\" , myResponse.moves[0].move.name)\r",
+									"pm.environment.set(\"move_url\" , myResponse.moves[0].move.url)\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"namePokemon\", \"metapod\"); //Se genero la variable de entorno con el nombre del pokemon favorito"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{namePokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{namePokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimiento_Pokemon_url",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json() //Variable Gobal para guardar el json de respuesta\r",
+									"\r",
+									"\r",
+									"//Validar la url del movimiento del pokemon dentro de learned_by_pokemon\r",
+									"pm.test(\"La url del movimiento de mi Pokémon es\" + \" \" + pm.environment.get(\"move_url\"), function () {\r",
+									"    pm.expect(myResponse.moves[0].move.url).to.eql(pm.environment.get(\"move_url\"));\r",
+									"});\r",
+									"\r",
+									"//Evaluar código de respuesta 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{namePokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{namePokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimiento_Pokemon_Nombre",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json() //Variable Gobal para guardar el json de respuesta\r",
+									"\r",
+									"\r",
+									"//Validar el nombre del movimiento del pokemon dentro de learned_by_pokemon\r",
+									"pm.test(\"Valida el nombre del movimiento de mi Pokémon\", function () {\r",
+									"    pm.expect(myResponse.name).to.eql(pm.environment.get(\"move_name\"));\r",
+									"    console.log(myResponse.name)\r",
+									"    console.log(myResponse.learned_by_pokemon[4])\r",
+									"});\r",
+									"\r",
+									"\r",
+									"//Evaluar código de respuesta 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{move_url}}",
+							"host": [
+								"{{move_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SCHEMA",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const schema ={ \r",
+									"    \"move\":{ \r",
+									"    \"name\":{\r",
+									"        \"type\": \"string\"\r",
+									"    },\r",
+									"    \"url\":{\r",
+									"        \"type\": \"string\"\r",
+									"        }\r",
+									"    }    \r",
+									"} \r",
+									"\r",
+									"pm.test(\"Validacion schema json\", () =>{ \r",
+									"    pm.response.to.have.jsonSchema(schema); \r",
+									"});\r",
+									"\r",
+									"//Evaluar código de respuesta 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{namePokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{namePokemon}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Escenarios_Negativos",
+			"item": [
+				{
+					"name": "NombreIncorrectoPokemon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json() //Constante Gobal para guardar el json de respuesta\r",
+									"//Caso de prueba visto en mentoría.\r",
+									"pm.test( \"Valida nombre de Pokémon\",  () => {\r",
+									"    let pokemon = \"Charmander\"\r",
+									"    if(myResponse.name === pokemon){\r",
+									"        pm.test(\"el nombre es: \" + pokemon)\r",
+									"    } else {\r",
+									"        pm.test(\"El nombre no es \" + pokemon + \" el nombre correcto es \"+ pm.environment.get(\"namePokemon\"))\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"namePokemon\", \"metapod\"); //Se genero la variable de entorno con el nombre del pokemon favorito"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{namePokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{namePokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EscenarioNegativo404",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"namePokemon\", \"charmand\"); //Se genero la variable de entorno con el nombre del pokemon favorito"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//var myResponse = pm.response.json()\r",
+									"\r",
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El body es \" + pm.response.status, () => {\r",
+									"    console.log(pm.response.status)\r",
+									"    pm.expect(pm.response.status).to.equal(\"Not Found\")\r",
+									"})\r",
+									"\r",
+									"\r",
+									"//Limpiar Variables de entorno\r",
+									"pm.environment.unset(\"move_name\");\r",
+									"pm.environment.unset(\"move_url\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{namePokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{namePokemon}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"",
+					"//Validar tiempo de respuesta",
+					"pm.test(\"El tiempo de respuesta es 700ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(700);",
+					"});"
+				]
+			}
+		}
+	]
+}
