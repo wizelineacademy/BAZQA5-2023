@@ -1,0 +1,374 @@
+{
+	"info": {
+		"_postman_id": "4c0b2a72-0bdd-46ef-b6c2-65d053b79639",
+		"name": "pokfavorito",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23068980"
+	},
+	"item": [
+		{
+			"name": "EsenariosPositivos",
+			"item": [
+				{
+					"name": "MiPokemonFavorito",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Elija su pokemon favorito (almacenar esta información en un archivo de variables de ambiente) \r",
+									"// \"Pre-request Script\" cuando sea posible crear una variable, y asignarle un valor antes de realizar una petición al servidor.\r",
+									"\r",
+									"postman.setEnvironmentVariable(\"my_favorite_pokemon\", \"charizard\")"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Busque toda la información disponible para ese movimiento\r",
+									"console.log(JSON.parse(responseBody).moves[0].move.name)\r",
+									"\r",
+									"//primer movimiento de la lista, almacene esa información en el archivo de variables de ambiente (nombre, y url).\r",
+									"postman.setEnvironmentVariable(\"Movimineto_Nombre\",JSON.parse(responseBody).moves[0].move.name)\r",
+									"postman.setEnvironmentVariable(\"Movimineto_Url\",JSON.parse(responseBody).moves[0].move.url)\r",
+									"\r",
+									"\r",
+									"//Evaluar los códigos de respuesta (HTTP) según corresponda para cada request.\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"//Agregar una función de prueba que valide el tiempo de respuesta bajo de 700 ms\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(700);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{my_favorite_pokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{my_favorite_pokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviminetos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Validar el nombre del movimiento, y que dentro de la sección “learned_by_pokemon” se muestre el nombre del pokemon favorito seleccionado\r",
+									"\r",
+									"pm.test(\" charizard esta en movimientos aprendidos\", () => {\r",
+									"    const favoritePokemon = pm.environment.get(\"my_favorite_pokemon\");\r",
+									"    // La lista learned_by_pokemon contiene mi pokemon favorito\r",
+									"    const pokemonsWithTheSameName = pm.response.json().learned_by_pokemon.filter(pokemon => {\r",
+									"        return pokemon.name == favoritePokemon;\r",
+									"    })\r",
+									"    pm.expect(pokemonsWithTheSameName.length).gt(0);\r",
+									"})\r",
+									"\r",
+									"//Evaluar los códigos de respuesta (HTTP) según corresponda para cada request.\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"//Agregar una función de prueba que valide el tiempo de respuesta bajo de 700 ms\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(700);\r",
+									"});\r",
+									"\r",
+									"//Crear una función para validar el json schema (esto aplica para movimientos - movimiento del punto número 1.\r",
+									"\r",
+									"pm.test(\"Schema es correcto\", () => {\r",
+									"    const schema = {\r",
+									"        \"type\": \"object\",\r",
+									"        \"properties\": {\r",
+									"            \"name\": {\r",
+									"                \"type\": \"string\"\r",
+									"            },\r",
+									"            \"url\": {\r",
+									"                \"type\": \"string\"\r",
+									"            }\r",
+									"        }\r",
+									"    }\r",
+									"    pm.expect({name: \"hola\", url: \"esperamos una cadena URL\"}).to.have.jsonSchema(schema)\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlmov}}{{Movimiento}}",
+							"host": [
+								"{{urlmov}}{{Movimiento}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MoviminetosURL",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Validar el nombre del movimiento, y que dentro de la sección “learned_by_pokemon” se muestre el nombre del pokemon favorito seleccionado\r",
+									"\r",
+									"pm.test(\" charizard esta en movimientos aprendidos\", () => {\r",
+									"    const favoritePokemon = pm.environment.get(\"my_favorite_pokemon\");\r",
+									"// La lista learned_by_pokemon contiene mi pokemon favorito\r",
+									"    const pokemonsWithTheSameName = pm.response.json().learned_by_pokemon.filter(pokemon => {\r",
+									"        return pokemon.name == favoritePokemon;\r",
+									"    })\r",
+									"    pm.expect(pokemonsWithTheSameName.length).gt(0);\r",
+									"})\r",
+									"\r",
+									"//Validación por medio de la url del movimiento.\r",
+									"\r",
+									"pm.test(\" url esta en movimientos aprendidos\", () => {\r",
+									"    const urlmovimiento = pm.environment.get(\"my_favorite_pokemon\");\r",
+									"// La lista learned_by_pokemon contiene mi pokemon favorito\r",
+									"    const pokemonsWithTheSameName = pm.response.json().learned_by_pokemon.filter(pokemon => {\r",
+									"        return pokemon.name == urlmovimiento;\r",
+									"    })\r",
+									"    pm.expect(pokemonsWithTheSameName.length).gt(0);\r",
+									"})\r",
+									"\r",
+									"\r",
+									"//Evaluar los códigos de respuesta (HTTP) según corresponda para cada request.\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"//Agregar una función de prueba que valide el tiempo de respuesta bajo de 700 ms\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(700);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlmov}}{{Movimiento}}",
+							"host": [
+								"{{urlmov}}{{Movimiento}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EsenariosNegativos",
+			"item": [
+				{
+					"name": "Moviminetos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Validar el nombre del movimiento, y que dentro de la sección “learned_by_pokemon” se muestre el nombre del pokemon favorito seleccionado\r",
+									"\r",
+									"pm.test(\"pokemon_inexistente no está en movimientos aprendidos\", () => {\r",
+									"    const favoritePokemon = pm.environment.get(\"my_favorite_pokemon\");\r",
+									"    const learnedByPokemon = pm.response.json().learned_by_pokemon;\r",
+									"  \r",
+									"    // Verificar que el Pokémon_inexistente  NO esté en la lista de movimientos aprendidos\r",
+									"    const foundPokemon = learnedByPokemon.find(pokemon => pokemon.name === pokemon_inexistente);\r",
+									"  \r",
+									"    pm.expect(foundPokemon).to.be.undefined;\r",
+									"});\r",
+									"\r",
+									"//Evaluar los códigos de respuesta (HTTP) según corresponda para cada request.\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"//Agregar una función de prueba que valide el tiempo de respuesta bajo de 700 ms\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(7);\r",
+									"});\r",
+									"\r",
+									"// Validamos nombre tipo int y urt tipo int\r",
+									"pm.test(\"Schema es correcto\", () => {\r",
+									"    const schema = {\r",
+									"        \"type\": \"object\",\r",
+									"        \"properties\": {\r",
+									"            \"name\": {\r",
+									"                \"type\": \"number\"\r",
+									"            },\r",
+									"            \"url\": {\r",
+									"                \"type\": \"number\"\r",
+									"            }\r",
+									"        }\r",
+									"    }\r",
+									"    pm.expect({name: \"pokemon\", url: \"www.url.com\"}).to.have.jsonSchema(schema)\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlmov}}{{Movimiento}}",
+							"host": [
+								"{{urlmov}}{{Movimiento}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MoviminetosURL",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Validar el nombre del movimiento, y que dentro de la sección “learned_by_pokemon” se muestre el nombre del pokemon favorito seleccionado\r",
+									"\r",
+									"pm.test(\" otro pokemon NO esta en movimientos aprendidos\", () => {\r",
+									"    const favoritePokemon = pm.environment.get(\"my_favorite_pokemon\");\r",
+									"// La lista learned_by_pokemon contiene mi pokemon favorito\r",
+									"    const pokemonsWithTheSameName = pm.response.json().learned_by_pokemon.filter(pokemon => {\r",
+									"        return pokemon.name == favoritePokemon;\r",
+									"    })\r",
+									"    pm.expect(pokemonsWithTheSameName.length).gt(5);\r",
+									"})\r",
+									"\r",
+									"//Validación por medio de la url del movimiento.\r",
+									"pm.test(\" charizard esta en movimientos aprendidos URL\", () => {\r",
+									"    const favoritePokemon = pm.environment.get(\"my_favorite_pokemon\");\r",
+									"    // La lista learned_by_pokemon contiene mi pokemon favorito\r",
+									"    const pokemonsWithTheSameName = pm.response.json().learned_by_pokemon.filter(pokemon => {\r",
+									"        return pokemon.name == favoritePokemon;\r",
+									"    })\r",
+									"    pm.expect(pokemonsWithTheSameName.length).gt(5);\r",
+									"})\r",
+									"\r",
+									"//Evaluar los códigos de respuesta (HTTP) según corresponda para cada request.\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"//Agregar una función de prueba que valide el tiempo de respuesta bajo de 700 ms\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(15);\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlmov}}{{Movimiento}}",
+							"host": [
+								"{{urlmov}}{{Movimiento}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MiPokemonFavorito",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Elija su pokemon favorito (almacenar esta información en un archivo de variables de ambiente) \r",
+									"// \"Pre-request Script\" cuando sea posible crear una variable, y asignarle un valor antes de realizar una petición al servidor.\r",
+									"\r",
+									"postman.setEnvironmentVariable(\"my_favorite_pokemon\", \"charizard\")"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Busque toda la información disponible para ese movimiento\r",
+									"console.log(JSON.parse(responseBody).moves[0].move.name)\r",
+									"\r",
+									"//primer movimiento de la lista, almacene esa información en el archivo de variables de ambiente (nombre, y url).\r",
+									"postman.setEnvironmentVariable(\"Movimineto_Nombre\",JSON.parse(responseBody).moves[0].move.name)\r",
+									"postman.setEnvironmentVariable(\"Movimineto_Url\",JSON.parse(responseBody).moves[0].move.url)\r",
+									"\r",
+									"//Agregar una función de prueba que valide el tiempo de respuesta bajo de 700 ms\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(10);\r",
+									"});\r",
+									"\r",
+									"//consultar la información de un pokemon inexistente\r",
+									"\r",
+									"// Verificar el código de estado HTTP\r",
+									"pm.test(\"Código de estado debe ser 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"// Verificar el mensaje de error en la respuesta\r",
+									"pm.test(\"Mensaje de error debe estar presente\", function () {\r",
+									"    pm.response.to.have.jsonBody('detail', 'Not found.');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{my_favorite_pokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{my_favorite_pokemon}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
