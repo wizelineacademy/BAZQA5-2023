@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "664202f5-7bde-4dd9-b440-440732c3c0cf",
+		"name": "PokemonAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Positive",
+			"item": [
+				{
+					"name": "TestPositiveBusqPokemon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Valida código respuesta 200",
+									"pm.test(\"El código de respuesta es 200\", function(){",
+									"    pm.response.to.have.status(200);",
+									"})",
+									"",
+									"//Valida que el tiempo de respuesta sea menos de 700 ms",
+									"pm.test(\"El tiempo de respuesta es menor a 700 ms\", function(){",
+									"    pm.expect(pm.response.responseTime).to.be.below(700);",
+									"})",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"namepokemon\", \"sylveon\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/pokemon/{{namepokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pokemon",
+								"{{namepokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TestPositiveBusqMovimientoPoke",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myjson = pm.response.json();",
+									"let move = pm.environment.get(\"namemove\");",
+									"let namepoke = pm.environment.get(\"namepokemon\");",
+									"",
+									"//Valida código respuesta 200",
+									"pm.test(\"El código de respuesta es 200\", function(){",
+									"    pm.response.to.have.status(200);",
+									"})",
+									"",
+									"//Valida que el tiempo de respuesta sea menos de 700 ms",
+									"pm.test(\"El tiempo de respuesta es menor a 700 ms\", function(){",
+									"    pm.expect(pm.response.responseTime).to.be.below(700);",
+									"})",
+									"",
+									"//Valida que contenga el movimiento",
+									"pm.test(\"Contiene el movimiento \"+move,()=>{",
+									"    pm.expect(myjson).to.include({\"name\":move})",
+									"})",
+									"",
+									"",
+									"//Test existe el pokemon",
+									"let findpoke = myjson.learned_by_pokemon.find(i=>i.name===namepoke)",
+									"pm.test(\"El pokemon \"+namepoke+ \" existe para el movimiento \"+move,function(){",
+									"    pm.expect(findpoke).to.include({\"name\":namepoke})",
+									"})",
+									"",
+									"//Validación de esquema",
+									"",
+									"const schema = {",
+									"    \"type\": \"object\",",
+									"    \"properties\": {",
+									"        \"accuracy\": {\"type\": \"integer\"},",
+									"        \"contest_combos\": {\"type\": \"null\"},",
+									"        \"contest_effect\":{",
+									"            \"url\": {\"type\": \"string\"}",
+									"        },",
+									"        \"contest_type\":{",
+									"            \"name\": {\"type\": \"string\"},",
+									"            \"url\": {\"type\": \"string\"}",
+									"        },",
+									"        \"damage_class\":{",
+									"            \"name\": {\"type\": \"string\"},",
+									"            \"url\": {\"type\": \"string\"}",
+									"        },",
+									"        \"effect_chance\": {\"type\": \"null\"},",
+									"        \"effect_changes\": {\"type\": \"array\"},",
+									"        \"effect_entries\": {\"type\": \"array\"},",
+									"            \"effect\": {\"type\": \"string\"},",
+									"            \"language\": {",
+									"                \"name\": {\"type\": \"string\"},",
+									"                \"url\": {\"type\": \"string\"}",
+									"            },",
+									"            \"short_effect\": {\"type\": \"string\"},",
+									"        \"flavor_text_entries\": {\"type\": \"array\"},",
+									"            \"flavor_text\": {\"type\": \"string\"},",
+									"            \"language\": {",
+									"                \"name\": {\"type\": \"string\"},",
+									"                \"url\": {\"type\": \"string\"}",
+									"            },",
+									"            \"version_group\":{",
+									"                \"name\": {\"type\": \"string\"},",
+									"                \"url\": {\"type\": \"string\"}",
+									"            },",
+									"        \"generation\":{",
+									"            \"name\": {\"type\":\"string\"},",
+									"            \"url\": {\"type\":\"string\"}",
+									"        },",
+									"        \"id\": {\"type\":\"integer\"},",
+									"        \"learned_by_pokemon\": {\"type\":\"array\"},",
+									"            \"name\": {\"type\":\"string\"},",
+									"            \"url\": {\"type\":\"string\"},",
+									"        \"machines\": {\"type\":\"array\"},",
+									"            \"machine\":{",
+									"                \"url\": {\"type\":\"string\"}",
+									"            },",
+									"            \"version_group\":{",
+									"                \"name\":{\"type\": \"string\"},",
+									"                \"url\": {\"type\": \"string\"}",
+									"            },",
+									"        \"meta\":{",
+									"            \"ailment\":{",
+									"                \"name\":{\"type\": \"string\"},",
+									"                \"url\": {\"type\": \"string\"}",
+									"            },",
+									"            \"ailment_chance\":{\"type\":\"integer\"},",
+									"            \"category\":{",
+									"                \"name\":{\"type\": \"string\"},",
+									"                \"url\": {\"type\": \"string\"}",
+									"            },",
+									"            \"crit_rate\":{\"type\":\"integer\"},",
+									"            \"drain\":{\"type\":\"integer\"},",
+									"            \"flinch_chance\":{\"type\":\"integer\"},",
+									"            \"healing\":{\"type\":\"integer\"},",
+									"            \"max_hits\":{\"type\":\"null\"},",
+									"            \"max_turns\":{\"type\":\"null\"},",
+									"            \"min_hits\":{\"type\":\"null\"},",
+									"            \"min_turns\":{\"type\":\"null\"},",
+									"            \"stat_chance\":{\"type\":\"integer\"}",
+									"        },",
+									"        \"name\":{\"type\": \"string\"},",
+									"        \"names\":{\"type\": \"array\"},",
+									"            \"language\":{",
+									"                \"name\":{\"type\": \"string\"},",
+									"                \"url\": {\"type\": \"string\"}",
+									"            },",
+									"            \"name\":{\"type\":\"string\"},",
+									"        \"past_values\":{\"type\":\"array\"},",
+									"        \"power\":{\"type\":\"integer\"},",
+									"        \"pp\":{\"type\":\"integer\"},",
+									"        \"priority\":{\"type\":\"integer\"},",
+									"        \"stat_changes\":{\"type\":\"array\"},",
+									"        \"super_contest_effect\":{",
+									"            \"url\": {\"type\":\"string\"}",
+									"            },",
+									"        \"target\":{",
+									"            \"name\":{\"type\": \"string\"},",
+									"            \"url\": {\"type\": \"string\"}",
+									"        },",
+									"        \"type\":{",
+									"            \"name\":{\"type\": \"string\"},",
+									"            \"url\": {\"type\": \"string\"}",
+									"        }",
+									"    }",
+									"};",
+									"",
+									"pm.test(\"Schema valido\",() => {",
+									"    pm.response.to.have.jsonSchema(schema);",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.unset(\"namemove\");",
+									"pm.environment.set(\"namemove\",\"pay-day\");",
+									"pm.environment.unset(\"namepokemon\");",
+									"pm.environment.set(\"namepokemon\", \"sylveon\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlmovimiento}}",
+							"host": [
+								"{{urlmovimiento}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TestPositiveBusqMovimientoPoke2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Variables",
+									"let myjson = pm.response.json();",
+									"let urlpoke = pm.environment.get(\"URLMovePoke\")",
+									"",
+									"",
+									"//Valida código respuesta 200",
+									"pm.test(\"El código de respuesta es 200\", function(){",
+									"    pm.response.to.have.status(200);",
+									"})",
+									"",
+									"",
+									"//Valida que el tiempo de respuesta sea menos de 700 ms",
+									"pm.test(\"El tiempo de respuesta es menor a 700 ms\", function(){",
+									"    pm.expect(pm.response.responseTime).to.be.below(700);",
+									"})",
+									"",
+									"//Valida que contenga la URL",
+									"let findpoke = myjson.learned_by_pokemon.find(i=>i.url===urlpoke)",
+									"pm.test(\"La URL existe\",function(){",
+									"    pm.expect(findpoke).to.include({\"url\":urlpoke})",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.unset(\"URLMovePoke\");",
+									"pm.environment.set(\"URLMovePoke\", \"https://pokeapi.co/api/v2/pokemon/700/\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlmovimiento}}",
+							"host": [
+								"{{urlmovimiento}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Negative",
+			"item": [
+				{
+					"name": "TestNegativeBusqPokemon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Valida código respuesta es diferente a 200",
+									"pm.test(\"El pokemon no existe\", function(){",
+									"    pm.response.to.have.status(404);",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"namepokemon\", \"pacman\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/pokemon/{{namepokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pokemon",
+								"{{namepokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TestNegativeMovimientos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myjson = pm.response.json();",
+									"let move = pm.environment.get(\"namemove\");",
+									"let namepoke = pm.environment.get(\"namepokemon\");",
+									"",
+									"//Valida que no contenga el movimiento",
+									"pm.test(\"No contiene el movimiento \"+move,()=>{",
+									"    pm.expect(myjson).to.not.include({\"name\":move})",
+									"})",
+									"",
+									"",
+									"//Test no existe el pokemon con el movimiento",
+									"let findpoke = myjson.learned_by_pokemon.find(i=>i.name!=namepoke)",
+									"pm.test(\"El pokemon \"+namepoke+ \" no existe para el movimiento \"+move,function(){",
+									"    pm.expect(findpoke).to.not.include({\"name\":namepoke})",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.unset(\"namemove\");",
+									"pm.environment.set(\"namemove\",\"destello\");",
+									"pm.environment.unset(\"namepokemon\");",
+									"pm.environment.set(\"namepokemon\", \"digimon\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlmovimiento}}",
+							"host": [
+								"{{urlmovimiento}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
