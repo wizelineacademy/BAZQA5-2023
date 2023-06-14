@@ -1,0 +1,536 @@
+{
+	"info": {
+		"_postman_id": "1528317b-72ad-4a5b-bb7d-477b5976bcbe",
+		"name": "EjercicioPokemonApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Positivos",
+			"item": [
+				{
+					"name": "1-BuscarPokemon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Guardar respuesta\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"// Guardar nombre y url del primer movimiento\r",
+									"pm.environment.set(\"nombrePrimerMovimiento\", jsonData.moves[0].move.name);\r",
+									"pm.environment.set(\"urlPrimerMovimiento\", jsonData.moves[0].move.url);\r",
+									"\r",
+									"// Armar url del pokemon por id\r",
+									"// urlpokemonPorId = pm.environment.get(\"url\") + \"/pokemon/\" + jsonData.id + \"\\/\";\r",
+									"// pm.environment.set(\"urlPokemonId\", urlpokemonPorId)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"pokemon\", \"mudkip\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/pokemon/{{pokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pokemon",
+								"{{pokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2-ConsultarPrimerMovimientoPorNombre",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Guardar respuesta en una varible\r",
+									"let myResponse = pm.response.json();\r",
+									"\r",
+									"// Guardar en una variable el nombre del movimiento del response\r",
+									"let nombreMovimiento = myResponse.name\r",
+									"\r",
+									"pm.test(\"Validar que el nombre del movimiento corresponda con el movimiento consultado\", function () {\r",
+									"    pm.expect(nombreMovimiento).to.equal(pm.environment.get(\"nombrePrimerMovimiento\"));\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Validar que learned_by_pokemon contenga pokemon elegido\", function () {\r",
+									"    let bandera = false;\r",
+									"    let i;\r",
+									"    for(i = 0; i < myResponse.learned_by_pokemon.length; i++){\r",
+									"        if(myResponse.learned_by_pokemon[i].name === pm.environment.get(\"pokemon\")){\r",
+									"            bandera = true;\r",
+									"            break;\r",
+									"        } \r",
+									"    }\r",
+									"    pm.expect(bandera).to.be.true;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"validar el json schema\", function () {\r",
+									"   pm.response.to.have.jsonSchema(pm.environment.get(\"esquemaV\"));\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var esquema = {\r",
+									"    \"type\": \"object\",\r",
+									"    \"properties\": {\r",
+									"        \"accuracy\": {\r",
+									"            \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"contest_combos\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"contest_effect\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"contest_type\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"damage_class\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"effect_chance\": {\r",
+									"            \"type\": [\"integer\", \"null\"]\r",
+									"        },\r",
+									"        \"effect_changes\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"effect_entries\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"flavor_text_entries\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"generation\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"id\": {\r",
+									"            \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"learned_by_pokemon\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"machines\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"meta\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"name\": {\r",
+									"            \"type\": \"string\"\r",
+									"        },\r",
+									"        \"names\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"past_values\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"power\": {\r",
+									"            \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"pp\": {\r",
+									"            \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"priority\": {\r",
+									"            \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"stat_changes\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"super_contest_effect\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"target\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"type\": {\r",
+									"            \"type\": \"object\"\r",
+									"        }\r",
+									"    }\r",
+									"}\r",
+									"\r",
+									"pm.environment.set(\"esquemaV\", esquema)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/move/{{nombrePrimerMovimiento}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"move",
+								"{{nombrePrimerMovimiento}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3-ConsultarPrimerMovimientoPorUrl",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Guardar respuesta en una varible\r",
+									"let myResponse = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validar que learned_by_pokemon contenga pokemon elegido\", function () {\r",
+									"    let bandera = false;\r",
+									"    let i;\r",
+									"    for(i = 0; i < myResponse.learned_by_pokemon.length; i++){\r",
+									"        if(myResponse.learned_by_pokemon[i].name === pm.environment.get(\"pokemon\")){\r",
+									"            bandera = true;\r",
+									"            break;\r",
+									"        } \r",
+									"    }\r",
+									"    pm.expect(bandera).to.be.true;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"validar el json schema\", function () {\r",
+									"   pm.response.to.have.jsonSchema(pm.environment.get(\"esquemaV\"));\r",
+									"});\r",
+									"\r",
+									"// Limpiar variables de entorno\r",
+									"pm.environment.unset(\"esquemaV\");\r",
+									"pm.environment.unset(\"nombrePrimerMovimiento\");\r",
+									"pm.environment.unset(\"urlPrimerMovimiento\");\r",
+									"pm.environment.unset(\"nombreMovimiento\");\r",
+									"pm.environment.unset(\"pokemon\");\r",
+									"pm.environment.unset(\"urlPokemonId\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var esquema = {\r",
+									"    \"type\": \"object\",\r",
+									"    \"properties\": {\r",
+									"        \"accuracy\": {\r",
+									"            \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"contest_combos\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"contest_effect\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"contest_type\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"damage_class\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"effect_chance\": {\r",
+									"            \"type\": [\"integer\", \"null\"]\r",
+									"        },\r",
+									"        \"effect_changes\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"effect_entries\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"flavor_text_entries\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"generation\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"id\": {\r",
+									"            \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"learned_by_pokemon\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"machines\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"meta\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"name\": {\r",
+									"            \"type\": \"string\"\r",
+									"        },\r",
+									"        \"names\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"past_values\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"power\": {\r",
+									"            \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"pp\": {\r",
+									"            \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"priority\": {\r",
+									"            \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"stat_changes\": {\r",
+									"            \"type\": \"array\"\r",
+									"        },\r",
+									"        \"super_contest_effect\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"target\": {\r",
+									"            \"type\": \"object\"\r",
+									"        },\r",
+									"        \"type\": {\r",
+									"            \"type\": \"object\"\r",
+									"        }\r",
+									"    }\r",
+									"}\r",
+									"\r",
+									"pm.environment.set(\"esquemaV\", esquema)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlPrimerMovimiento}}",
+							"host": [
+								"{{urlPrimerMovimiento}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Validar codigo de respuesta 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Negativos",
+			"item": [
+				{
+					"name": "1-BuscarPokemon-Negativos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"nombrePrimerMovimiento\", \"Pruebas\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"pokemon\", \"pruebas\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/pokemon/{{pokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pokemon",
+								"{{pokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2-ConsultarPrimerMovimientoPorNombre-Negativo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"nombrePrimerMovimiento\", \"Pruebas\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/move/{{nombrePrimerMovimiento}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"move",
+								"{{nombrePrimerMovimiento}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3-ConsultarPrimerMovimientoPorUrlNegativo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.unset(\"nombrePrimerMovimiento\");\r",
+									"pm.environment.unset(\"pokemon\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/move/99999999999999999",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"move",
+								"99999999999999999"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Validar codigo de respuesta 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							"pm.test(\"Validar que contenga Not Found\", function () {",
+							"    pm.response.to.have.body(\"Not Found\");",
+							"});"
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Tiempo de respuesta menor a 700ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(700);",
+					"});",
+					""
+				]
+			}
+		}
+	]
+}
