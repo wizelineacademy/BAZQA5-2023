@@ -58,7 +58,7 @@ Los temas están divididos en 6 semanas, 2 sesiones intensivas por semana.
    2. TDD/BDD
  
 ### Semana 5
-   1. Repaso POO 
+   1. Repaso POO(https://ellibrodepython.com/programacion-orientada-a-objetos-python)
    2. Front End Python (Principios + POM)
    
 ### Semana 6
