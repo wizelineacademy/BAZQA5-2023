@@ -20,7 +20,7 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - 📺 [Grabación Martes 6 junio](https://drive.google.com/file/d/1M6ZZVFNdtSm6NITykRM9CJNf6m_9NciY/view?usp=drive_link)
 
 # Semana 4
-- [Lunes 12 junio - Configuración de dispositivos expternos (Revisión de Appium)]
+- [Lunes 12 junio - Configuración de dispositivos externos (Revisión de Appium)]
 - 📺 [Grabación Lunes 12 junio](https://drive.google.com/file/d/1PzhrTewaTV72eOJSOkcQntQt_dc7xMHZ/view?usp=drive_link)
 - [Martes 13 junio - TDD/BDD]
 - 📺 [Grabación Martes 13 junio](https://drive.google.com/file/d/1vI8rwoPnE1nSnFyEm5l1823SCv0tzT_P/view?usp=drive_link)
