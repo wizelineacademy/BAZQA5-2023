@@ -29,7 +29,7 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - [Lunes 19 junio - Repaso POO]
 - 📺 [Grabación Lunes 19 junio](https://drive.google.com/file/d/1L9iWMUuGMjW20hSvFpz3oo0I5npSuRny/view?usp=drive_link)
 - [Martes 20 junio - Front End Python Parte 1](https://drive.google.com/file/d/1TrEoUG7mwgy5w_5fedHeCCJzd36boh6N/view?usp=drive_link)
-- 📺 [Grabación Martes 20 junio]
+- 📺 [Grabación Martes 20 junio](https://drive.google.com/file/d/1hTQl2MIKGuJ-TTT0t1VsaoL68mVauocb/view?usp=drive_link)
 
 # Semana 6
 - [Lunes 26 junio - Front End Python Parte 2]
