@@ -33,6 +33,6 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 
 # Semana 6
 - [Lunes 26 junio - Front End Python Parte 2]
-- 📺 [Grabación Lunes 26 junio]
+- 📺 [Grabación Lunes 26 junio](https://drive.google.com/file/d/1ZSwq9osunuROvCNQ0l6D0RtF4CAJmk_o/view?usp=drive_link)
 - [Martes 27 junio - Automatización mobile: Implementación de Behave]
-- 📺 [Grabación Martes 27 junio]
+- 📺 [Grabación Martes 27 junio](https://drive.google.com/file/d/1n6Yh5zOGL2A7LjqNX7EPrrsSz1EMUofR/view?usp=drive_link)
