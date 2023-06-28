@@ -32,7 +32,7 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - 📺 [Grabación Martes 20 junio](https://drive.google.com/file/d/1hTQl2MIKGuJ-TTT0t1VsaoL68mVauocb/view?usp=drive_link)
 
 # Semana 6
-- [Lunes 26 junio - Front End Python Parte 2]
+- [Lunes 26 junio - Front End Python Parte 2](https://drive.google.com/file/d/1aW68UkLOkhb_LAJlN9nW5ya4-WgB0edR/view?usp=drive_link)
 - 📺 [Grabación Lunes 26 junio](https://drive.google.com/file/d/1ZSwq9osunuROvCNQ0l6D0RtF4CAJmk_o/view?usp=drive_link)
-- [Martes 27 junio - Automatización mobile: Implementación de Behave]
+- [Martes 27 junio - Automatización mobile: Implementación de Behave](https://drive.google.com/file/d/1CsnfM7LnZwEz5BSCn39jMFgqulQIZNPm/view?usp=drive_link)
 - 📺 [Grabación Martes 27 junio](https://drive.google.com/file/d/1n6Yh5zOGL2A7LjqNX7EPrrsSz1EMUofR/view?usp=drive_link)
