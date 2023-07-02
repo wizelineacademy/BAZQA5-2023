@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "3f04030b-4e78-4806-985f-56d1dbe7df07",
+		"name": "API_Pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27676152"
+	},
+	"item": [
+		{
+			"name": "EscenariosPositivos",
+			"item": [
+				{
+					"name": "Elegir un pokemón",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.environment.set(\"nombre_pokemon\", \"pikachu\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json();\r",
+									"console.log(myResponse)\r",
+									"\r",
+									"//Elija el primer movimiento de la lista, almacene esa información en el archivo de variables de ambiente (nombre,url).\r",
+									"pm.environment.set(\"movimiento_name\", myResponse.moves[0].move.name)\r",
+									"pm.environment.set(\"movimiento_url\", myResponse.moves[0].move.url)\r",
+									"\r",
+									"console.log(pm.environment.get(\"movimiento_name\"))\r",
+									"console.log(pm.environment.get(\"movimiento_url\"))\r",
+									"\r",
+									"\r",
+									"const POKEMON_MOVE_SCHEMA = {\r",
+									"    type: \"object\",\r",
+									"    properties: {\r",
+									"        name: {\r",
+									"            type: \"string\"\r",
+									"        },\r",
+									"        url: {\r",
+									"            type: \"string\"\r",
+									"        }\r",
+									"    },\r",
+									"    required: [\r",
+									"        \"name\",\r",
+									"        \"url\"\r",
+									"    ]\r",
+									"}\r",
+									"\r",
+									"\r",
+									"pm.test(\"Validando Esquema\", () => {\r",
+									"    pm.expect(myResponse.moves[0].move).to.have.jsonSchema(POKEMON_MOVE_SCHEMA);\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pokeapi.co/api/v2/pokemon/{{nombre_pokemon}}",
+							"protocol": "https",
+							"host": [
+								"pokeapi",
+								"co"
+							],
+							"path": [
+								"api",
+								"v2",
+								"pokemon",
+								"{{nombre_pokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MovimientosPokemon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json();\r",
+									"\r",
+									"//Test Validar primer nombre del movimiento\r",
+									"pm.test(\"Validar primer nombre del movimiento\", function () {\r",
+									"   pm.expect(myResponse.name).to.have.equals(pm.environment.get(\"movimiento_name\"));\r",
+									"})\r",
+									"\r",
+									"//Validar dentro de la sección “learned_by_pokemon”\r",
+									"\r",
+									"pm.test(\"Mi pokemon si se encuentra dentro de learned_by_pokemon \", function () {\r",
+									"    var foundpokemon = false\r",
+									"    for(i=0; i < myResponse.learned_by_pokemon.length;i++){\r",
+									"        if(myResponse.learned_by_pokemon[i].name === pm.environment.get(\"nombre_pokemon\")){\r",
+									"            foundpokemon = true\r",
+									"        }\r",
+									"    }\r",
+									"    pm.expect(foundpokemon).eq(true)\r",
+									"});\r",
+									"\r",
+									"\r",
+									"console.log(pm.environment.get(\"movimiento_url\"))\r",
+									"\r",
+									"//Evaluar los códigos de respuesta (HTTP)\r",
+									"pm.test(\"Escenario Positivo es: 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"//Validación por debajo de los 700ms\r",
+									"pm.test(\"Validación tiempo de respuesta: por debajo de  700ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(700);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pokeapi.co/api/v2/move/{{movimiento_name}}/",
+							"protocol": "https",
+							"host": [
+								"pokeapi",
+								"co"
+							],
+							"path": [
+								"api",
+								"v2",
+								"move",
+								"{{movimiento_name}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "urlMovimiento",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validar nombre del movimiento \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(pm.environment.get(\"movimiento_name\"));\r",
+									"});\r",
+									"\r",
+									"//Validar dentro de la sección “learned_by_pokemon”\r",
+									"\r",
+									"pm.test(\"Mi pokemon si se encuentra dentro de learned_by_pokemon \", function () {\r",
+									"    var foundpokemon = false\r",
+									"    for(i=0; i < myResponse.learned_by_pokemon.length;i++){\r",
+									"        if(myResponse.learned_by_pokemon[i].name === pm.environment.get(\"nombre_pokemon\")){\r",
+									"            foundpokemon = true\r",
+									"        }\r",
+									"    }\r",
+									"    pm.expect(foundpokemon).eq(true)\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Escenario Positivo es: 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Validación tiempo de respuesta: por debajo de  700ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(700);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{movimiento_url}}",
+							"host": [
+								"{{movimiento_url}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Escenarios Negativos",
+			"item": [
+				{
+					"name": "Pokemon inexistente",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"nombre_pokemon_inexistente\", \"pikach\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Consultar la información de un pokemon inexistente,\r",
+									"pm.test(\"El codigo del endpoind es: 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"//Validar tiempo de respuesta esta por debajo de 700ms\r",
+									"pm.test(\"El tiempo de respuesta del endpoind esta por debajo de  700ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(700);\r",
+									"});\r",
+									"\r",
+									"//Valido la respuesta en el response es \"Not Found\"\r",
+									"pm.test(\"Status is no found\", function () {\r",
+									"    pm.expect(pm.response.status).to.be.eql(\"Not Found\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pokeapi.co/api/v2/pokemon/{{nombre_pokemon_inexistente}}",
+							"protocol": "https",
+							"host": [
+								"pokeapi",
+								"co"
+							],
+							"path": [
+								"api",
+								"v2",
+								"pokemon",
+								"{{nombre_pokemon_inexistente}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
