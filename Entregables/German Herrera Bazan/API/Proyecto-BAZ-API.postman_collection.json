@@ -1,0 +1,491 @@
+{
+	"info": {
+		"_postman_id": "fab44ab2-0a09-4264-810c-e0b625469a16",
+		"name": "Proyecto-BAZ-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23016707"
+	},
+	"item": [
+		{
+			"name": "Positivos",
+			"item": [
+				{
+					"name": "Obtener Pokemon Favorito",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Presentamos el  Esquema del JSON\r",
+									"const MOVE_SCHEMA = {\r",
+									"\t\"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
+									"\t\"type\": \"object\",\r",
+									"\t\"properties\": {\r",
+									"\t\t\"count\": {\r",
+									"\t\t\t\"type\": \"integer\"\r",
+									"\t\t},\r",
+									"\t\t\"next\": {\r",
+									"\t\t\t\"type\": \"string\"\r",
+									"\t\t},\r",
+									"\t\t\"previous\": {\r",
+									"\t\t\t\"type\": \"null\"\r",
+									"\t\t},\r",
+									"\t\t\"results\": {\r",
+									"\t\t\t\"type\": \"array\",\r",
+									"\t\t\t\"items\": [\r",
+									"\t\t\t\t{\r",
+									"\t\t\t\t\t\"type\": \"object\",\r",
+									"\t\t\t\t\t\"properties\": {\r",
+									"\t\t\t\t\t\t\"name\": {\r",
+									"\t\t\t\t\t\t\t\"type\": \"string\"\r",
+									"\t\t\t\t\t\t},\r",
+									"\t\t\t\t\t\t\"url\": {\r",
+									"\t\t\t\t\t\t\t\"type\": \"string\"\r",
+									"\t\t\t\t\t\t}\r",
+									"\t\t\t\t\t}\r",
+									"\t\t\t\t}\r",
+									"\t\t\t]\r",
+									"\t\t}\r",
+									"\t}\r",
+									"}\r",
+									"\r",
+									"// Guardamos el Id de mi Pokemon y el esquema\r",
+									"pm.environment.set(\"pokemon_id\", 10)\r",
+									"pm.environment.set(\"pokemon_move_schema\", MOVE_SCHEMA)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"// Guarda el nombre de mi pokemon favorito\r",
+									"let responseJson = pm.response.json();\r",
+									"pm.environment.set(\"pokemon_name\", responseJson.name);\r",
+									"\r",
+									"// Guardar el nombre y url del primer movimiento en una variable de ambiente\r",
+									"pm.environment.set(\"firts_move_name\", responseJson.moves[0].move.name);\r",
+									"pm.environment.set(\"first_move_url_ID\", responseJson.moves[0].move.url);\r",
+									"\r",
+									"// Validar el JSON Schema de la respuesta de movimientos\r",
+									"pm.test(\"Validar JSON Schema del movimiento del Pokémon\", function () {    \r",
+									"    pm.expect(tv4.validate(responseJson, pm.environment.get(\"pokemon_move_schema\"))).to.be.true;\r",
+									"});\r",
+									"\r",
+									"\r",
+									"console.log(responseJson)\r",
+									"console.log(pm.environment.get(\"pokemon_move_schema\"))\r",
+									"\r",
+									"// Validar por medio de la URL del movimiento\r",
+									"pm.sendRequest(\"https://pokeapi.co/api/v2/move/33/\", (error,res) =>{\r",
+									"    console.log(res.json())\r",
+									"    pm.test(\"Validar por medio la url del movimiento\", ()=>{\r",
+									"    \r",
+									"        let poke_name  = pm.environment.get(\"pokemon_name\")\r",
+									"        const filterpokemons = res.json().learned_by_pokemon.filter((item)=>{\r",
+									"            return poke_name == item.name               \r",
+									"        })\r",
+									"        console.log(filterpokemons.length)    \r",
+									"        pm.expect(filterpokemons.length).gte(1)\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{pokemon_url}}pokemon/{{pokemon_id}}",
+							"host": [
+								"{{pokemon_url}}pokemon"
+							],
+							"path": [
+								"{{pokemon_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Movimientos - Movimiento",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json()\r",
+									"\r",
+									"// Guardo el ID del movimiento de mi pokemon\r",
+									"pm.environment.set(\"firts_move_id\", myResponse.id);\r",
+									"\r",
+									"// Validar que mi pokemon este dentro de la sección learned_by_pokemon\r",
+									"pm.test(\"Validar que mi pokemon favorito este dentro de la sección learned_by_pokemon\", ()=>{\r",
+									"    let poke_name  = pm.environment.get(\"pokemon_name\")\r",
+									"    const filterpokemons = myResponse.learned_by_pokemon.filter((item)=>{\r",
+									"        return poke_name == item.name               \r",
+									"    })\r",
+									"    console.log(filterpokemons.length)    \r",
+									"    pm.expect(filterpokemons.length).gte(1)\r",
+									"   \r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"// Valida el nombre del movimiento\r",
+									"pm.test(\"Validar el nombre de mi movimiento\", function () {\r",
+									"    pm.expect(myResponse.name).to.include(pm.environment.get(\"firts_move_name\"));\r",
+									"});\r",
+									"\r",
+									"//console.log(\"Movimiento del JSON: \" + myResponse.name)\r",
+									"//console.log(\"Movimiento de la variable: \" + pm.environment.get(\"firts_move_name\"))\r",
+									"//console.log(myResponse.contest_combos)\r",
+									"\t\t\t\t\t\t\t\t\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{first_move_url_ID}}",
+							"host": [
+								"{{first_move_url_ID}}"
+							],
+							"query": [
+								{
+									"key": "movimiento",
+									"value": "megapuch",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Movimientos - URL",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json()\r",
+									"\r",
+									"// Validar que mi pokemon este dentro de la sección learned_by_pokemon\r",
+									"pm.test(\"Validar que mi pokemon favorito este dentro de la sección learned_by_pokemon\", ()=>{\r",
+									"    let poke_name  = pm.environment.get(\"pokemon_name\")\r",
+									"    const filterpokemons = myResponse.learned_by_pokemon.filter((item)=>{\r",
+									"        return poke_name == item.name               \r",
+									"    })\r",
+									"    console.log(filterpokemons.length)    \r",
+									"    pm.expect(filterpokemons.length).gte(1)\r",
+									"   \r",
+									"});\r",
+									"\r",
+									"\r",
+									"// Valida el nombre del movimiento\r",
+									"pm.test(\"Validar el nombre de mi movimiento\", function () {\r",
+									"    pm.expect(myResponse.name).to.include(pm.environment.get(\"firts_move_name\"));\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"//Elimino variables de ambiente\r",
+									"pm.environment.unset(\"pokemon_url\");\r",
+									"pm.environment.unset(\"first_move_url\");\r",
+									"pm.environment.unset(\"pokemon_name\");\r",
+									"pm.environment.unset(\"firts_move_name\");\r",
+									"pm.environment.unset(\"first_move_url_ID\");\r",
+									"pm.environment.unset(\"firts_move_id\");\r",
+									"pm.environment.unset(\"pokemon_id\");\r",
+									"pm.environment.unset(\"pokemon_move_schema\");\r",
+									"\t\t\t\t\t\t\t\t\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{first_move_url}}/{{firts_move_name}}",
+							"host": [
+								"{{first_move_url}}"
+							],
+							"path": [
+								"{{firts_move_name}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"//Variables",
+							"tiemporespuesta = 700;",
+							"succesfullCode = 200;",
+							"",
+							"//Guardamos la URL host de la API de Pokemon",
+							"pm.environment.set(\"pokemon_url\", \"https://pokeapi.co/api/v2/\")",
+							"pm.environment.set(\"first_move_url\", \"https://pokeapi.co/api/v2/move\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"// Validar que el código de respuesta sea 200",
+							"pm.test(\"El código de respuesta del endpoind es: 200\", function () {",
+							"    pm.response.to.have.status(succesfullCode);",
+							"});",
+							"",
+							"// Validamos el tiempo de respuesta por de bajo de 700ms",
+							"pm.test(\"El tiempo de respuesta del endpoint esta por debajo de 700ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(tiemporespuesta);    ",
+							"});",
+							"",
+							"",
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Negativos",
+			"item": [
+				{
+					"name": "Obtener Pokemon Favorito",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"// Validar el mensaje de error en la respuesta\r",
+									"pm.test(\"Validar mensaje de error:  Not Found\", function() {\r",
+									"    pm.expect(pm.response.code).to.eql(404);\r",
+									"    pm.expect(pm.response.status.toString()).to.eql(\"Not Found\"); \r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Guardo variable de mi pokemon inexistente\r",
+									"pm.environment.set(\"pokemon_name_inexistente\", \"mariobros\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{pokemon_url}}pokemon/{{pokemon_name_inexistente}}",
+							"host": [
+								"{{pokemon_url}}pokemon"
+							],
+							"path": [
+								"{{pokemon_name_inexistente}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Movimientos - Movimiento",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Guardo variable de mi movimiento inexistente\r",
+									"pm.environment.set(\"firts_move_name_inexistente\", \"patada\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Validar el mensaje de error en la respuesta\r",
+									"pm.test(\"Validar mensaje de error:  Not Found\", function() {\r",
+									"    pm.expect(pm.response.code).to.eql(404);\r",
+									"    pm.expect(pm.response.status.toString()).to.eql(\"Not Found\"); \r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{first_move_url}}/{{firts_move_name_inexistente}}",
+							"host": [
+								"{{first_move_url}}"
+							],
+							"path": [
+								"{{firts_move_name_inexistente}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Movimientos - URL",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Guardo variable de mi movimiento inexistente\r",
+									"pm.environment.set(\"firts_move_id_inexistente\", \"002880028\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Validar el mensaje de error en la respuesta\r",
+									"pm.test(\"Validar mensaje de error:  Not Found\", function() {\r",
+									"    pm.expect(pm.response.code).to.eql(404);\r",
+									"    pm.expect(pm.response.status.toString()).to.eql(\"Not Found\"); \r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{first_move_url}}/{{firts_move_id_inexistente}}",
+							"host": [
+								"{{first_move_url}}"
+							],
+							"path": [
+								"{{firts_move_id_inexistente}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"//Variables",
+							"errorCode = 404;",
+							"response_Time = 10;",
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"// Validar que el código de respuesta sea 404",
+							"pm.test(\"El código de respuesta del endpoind es: 400\", function () {",
+							"    pm.response.to.have.status(errorCode);",
+							"});",
+							"",
+							"// Validamos el tiempo de respuesta por de encima de 10ms",
+							"pm.test(\"El tiempo de respuesta del endpoint esta por encima de 10ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.above(response_Time);    ",
+							"});",
+							"",
+							"//Elimino variables de ambiente",
+							"pm.environment.unset(\"pokemon_name_inexistente\");",
+							"pm.environment.unset(\"firts_move_name_inexistente\");",
+							"pm.environment.unset(\"firts_move_id_inexistente\");"
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
