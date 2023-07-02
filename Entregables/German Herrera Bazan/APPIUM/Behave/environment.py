@@ -20,4 +20,5 @@ def after_scenario(context, scenario):
 
 
 def after_all(context):
+    #  Para ejecutar el reporte Allure
     subprocess.run("allure serve E:/Users/314511/PycharmProjects/baz_behave/Behave/reports/android", shell=True)
