@@ -25,7 +25,7 @@ class CommonActions(object):
     def get_text_of_element(self, *locator):
         return self.driver.find_element(*locator).text
 
-    def sroll_down(self, *locator):
+    def scroll_down(self, *locator):
         for _ in range(Coordenadas.get("MAX_NUM_OF_SWIPES")):
             try:
                 self.find_element(*locator)

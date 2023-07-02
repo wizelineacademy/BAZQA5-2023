@@ -8,4 +8,3 @@ class LoginScreen(CommonActions):
         self.txt_username = (By.ACCESSIBILITY_ID, "test-Username")
         self.txt_password = (By.ACCESSIBILITY_ID, "test-Password")
         self.btn_login = (By.ACCESSIBILITY_ID, "test-LOGIN")
-
