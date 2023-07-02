@@ -1,5 +1,4 @@
 from appium.webdriver.common.appiumby import AppiumBy as By
-
 from utils.common_actions import CommonActions
 
 

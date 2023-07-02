@@ -1,5 +1,5 @@
 from behave import When, Then
-from screens.productos_screen import ProductosScreen
+from screens.Productos_screen import ProductosScreen
 
 
 @When("Agregar un producto al carrito")

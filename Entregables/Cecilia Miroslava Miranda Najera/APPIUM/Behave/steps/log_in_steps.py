@@ -1,7 +1,7 @@
 from behave import Given, When, Then, Step
-from screens.log_in_screen import LoginScreen
-from screens.productos_screen import ProductosScreen
-from utils.dictionaries.log_in_text import LOGIN_TEXTS
+from screens.Log_in_screen import LoginScreen
+from screens.Productos_screen import ProductosScreen
+from utils.dictionaries.Log_in_text import LOGIN_TEXTS
 
 
 @Step("Dado que el usuario ya esta logueado")

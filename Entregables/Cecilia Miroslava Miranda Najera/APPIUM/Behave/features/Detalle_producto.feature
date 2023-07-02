@@ -6,4 +6,3 @@ Feature: Detalle del producto
       When se encuentre en el detalle del producto
       Then Visualizar el detalle y validar nombre
       And Hacer scroll
-
