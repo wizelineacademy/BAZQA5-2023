@@ -1,5 +1,5 @@
 from appium.webdriver.common.appiumby import AppiumBy as By
-from utils.common_actions import CommonActions
+from util.common_actions import CommonActions
 
 
 class FiltroScreen(CommonActions):

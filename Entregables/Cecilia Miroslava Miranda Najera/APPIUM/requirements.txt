@@ -3,3 +3,4 @@ Appium-Python-Client==2.11.1
 allure-behave==2.13.2
 python-dotenv==1.0.0
 selenium == 4.8.3
+utils~=1.0.1
