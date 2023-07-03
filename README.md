@@ -45,8 +45,8 @@ Los temas están divididos en 6 semanas, 2 sesiones intensivas por semana.
   2. [Referencias](https://drive.google.com/file/d/1W8gITaP93RcupAN-H7H80PRbGflwl0ez/view?usp=sharing)
   
 ### Semana 2
-  1. [Pycharm]
-  2. [Automatización con Agile (Git)]
+  1. [Pycharm](https://drive.google.com/file/d/1UnhHZJaa7_QoOCpi0RsR4TN75cY4l3Ff/view?usp=sharing)
+  2. [Automatización con Agile (Git)](https://drive.google.com/file/d/1cQbaK5ORW5LxERiVGwIhADVqGf62LCWP/view?usp=sharing)
   
 ## Entrenamiento
 ### Semana 3
@@ -58,7 +58,7 @@ Los temas están divididos en 6 semanas, 2 sesiones intensivas por semana.
    2. TDD/BDD
  
 ### Semana 5
-   1. Repaso POO 
+   1. [Repaso POO](https://ellibrodepython.com/programacion-orientada-a-objetos-python)
    2. Front End Python (Principios + POM)
    
 ### Semana 6

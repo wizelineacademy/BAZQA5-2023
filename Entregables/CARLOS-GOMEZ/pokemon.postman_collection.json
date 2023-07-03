@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "e24bafc4-dbdc-483d-8d1c-5dc51f1c2e3f",
+		"name": "pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27653578"
+	},
+	"item": [
+		{
+			"name": "Escenarios positivos",
+			"item": [
+				{
+					"name": "Pokemon-favorito",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Variable de pokemon favorito\r",
+									"pm.environment.set(\"nombre-pokemon\", \"dragonite\");\r",
+									"\r",
+									"//Almacenar url del pokemon favorito\r",
+									"pm.environment.set(\"pokemon-url\", \"https://pokeapi.co/api/v2/pokemon/149/\")\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{nombre-pokemon}}/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{nombre-pokemon}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Seleccionar primer movimiento",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json();\r",
+									"\r",
+									"//Función para obtener primer movimiento\r",
+									"function getFirtsElement (array, index){\r",
+									"    let item = array[index];\r",
+									"    return item;\r",
+									"}\r",
+									"//Almacenar en variable el nombre del primer movimiento\r",
+									"pm.environment.set(\"primer-mov-name\", myResponse.moves[0].move.name)\r",
+									"console.log(pm.environment.get(\"primer-mov-name\"))\r",
+									"\r",
+									"//Almacenar en variable la url del primer movimiento\r",
+									"pm.environment.set(\"primer-mov-url\", myResponse.moves[0].move.url)\r",
+									"console.log(pm.environment.get(\"primer-mov-url\"))\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Movimiento Dragonite\" : \"primer-mov-name\",\r\n    \"Información de movimiento\" : \"primer-mov-url\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{nombre-pokemon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{nombre-pokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detalles de movimiento",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json();\r",
+									"\r",
+									"//Validar que el nombre del movimiento aparezca\r",
+									"pm.test(\"Validar nombre del movimiento\", function () {  \r",
+									"    pm.expect(myResponse.name).to.eql(pm.environment.get(\"primer-mov-name\"));\r",
+									"});\r",
+									"\r",
+									"//Validar que el nombre del pokemon aparezca en el primer movimiento\r",
+									"pm.test(\"Validar nombre del pokemon favorito\", function () {  \r",
+									"    pm.expect(myResponse.learned_by_pokemon[46].name).to.eql(pm.environment.get(\"nombre-pokemon\"));\r",
+									"});\r",
+									"\r",
+									"//Validar que la url del pokemon aparezca en el primer movimiento\r",
+									"pm.test(\"Validar url del pokemon favorito\", function () {  \r",
+									"    pm.expect(myResponse.learned_by_pokemon[46].url).to.eql(pm.environment.get(\"pokemon-url\"));\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-mov}}{{primer-mov-name}}",
+							"host": [
+								"{{url-mov}}{{primer-mov-name}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"//Validación de status",
+							"pm.test(\"El pokemon buscado existe\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Escenario negativo",
+			"item": [
+				{
+					"name": "Pokemon no existente",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Validación de status\r",
+									"pm.test(\"El pokemon buscado no existe\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"    pm.response.to.have.status(\"Not Found\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Agumon/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Agumon",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"",
+					"//Validación de tiempo de respuesta",
+					"pm.test(\"El tiempo de respuesta es menor a 700 ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(700);",
+					"});"
+				]
+			}
+		}
+	]
+}

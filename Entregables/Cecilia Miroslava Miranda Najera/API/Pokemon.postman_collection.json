@@ -1,0 +1,447 @@
+{
+	"info": {
+		"_postman_id": "a49de411-3982-4ff2-aa5f-68e0f5a26b02",
+		"name": "Pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27814341"
+	},
+	"item": [
+		{
+			"name": "Escenarios positivos",
+			"item": [
+				{
+					"name": "Consultar movimientos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Capstone Project",
+									"//Elija el primer movimiento de la lista, almacene esa información en el archivo de variables de ambiente (nombre, y url).",
+									"",
+									"//response global",
+									"let myResponse = pm.response.json();",
+									"//variables de ambiente",
+									"let move = myResponse.moves[0].move;",
+									"pm.environment.set(\"name\", move.name)",
+									"pm.environment.set(\"urlmov\", move.url)"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"pokemon\", \"bulbasaur\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapi}}pokemon/{{pokemon}}",
+							"host": [
+								"{{urlapi}}pokemon"
+							],
+							"path": [
+								"{{pokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Información movimiento por nombre",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Capstone Project",
+									"// Busque toda la información relacionada para el movimiento seleccionado, validar el nombre del movimiento, y que dentro de la sección “learned_by_pokemon” se muestre el nombre del pokemon favorito seleccionado",
+									"",
+									"//response global",
+									"let myResponse = pm.response.json();",
+									"",
+									"//Recorrer el object",
+									"function validarPokemon(pokemon){",
+									"    resultado = false",
+									"    _.each(myResponse.learned_by_pokemon, (item) => {",
+									"        if(item.name == pokemon){",
+									"            resultado = true",
+									"        }",
+									"    })",
+									"    return resultado",
+									"}",
+									"",
+									"//Validar si mi pokemon existe",
+									"pm.test(\"Mi pokemon se encuentra en el object\", function() {",
+									"    pm.expect(validarPokemon(pm.environment.get(\"pokemon\"))).to.be.true",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlapi}}move/{{name}}",
+							"host": [
+								"{{urlapi}}move"
+							],
+							"path": [
+								"{{name}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Información movimiento por URL",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"pokemon\", \"bulbasaur\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//response global",
+									"let myResponse = pm.response.json();",
+									"",
+									"//Recorrer el object",
+									"function validarPokemon(pokemon){",
+									"    resultado = false",
+									"    _.each(myResponse.learned_by_pokemon, (item) => {",
+									"        if(item.name == pokemon){",
+									"            resultado = true",
+									"        }",
+									"    })",
+									"    return resultado",
+									"}",
+									"//Validar si mi pokemon existe",
+									"pm.test(\"Mi pokemon se encuentra en el object\", function() {",
+									"    pm.expect(validarPokemon(pm.environment.get(\"pokemon\"))).to.be.true",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlmov}}",
+							"host": [
+								"{{urlmov}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Schema",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var schema = { ",
+									"    \"type\": \"object\",",
+									"    \"properties\": { ",
+									"        \"accuracy\": {",
+									"            \"type\": \"integer\"",
+									"        },",
+									"        \"contest_combos\": {",
+									"            \"type\": \"null\"",
+									"        },",
+									"        \"contest_type\": {",
+									"            \"type\": \"object\"",
+									"        },",
+									"        \"damage_class\": {",
+									"            \"type\": \"object\"",
+									"        },",
+									"        \"effect_chance\": {",
+									"            \"type\": \"null\"",
+									"        },",
+									"        \"effect_changes\": {",
+									"            \"type\": \"array\"",
+									"        },",
+									"        \"effect_entries\": {",
+									"            \"type\": \"array\"",
+									"        },",
+									"        \"flavor_text_entries\": {",
+									"            \"type\": \"array\"",
+									"        },",
+									"        \"generation\": {",
+									"            \"type\": \"object\"",
+									"        },",
+									"        \"id\": {",
+									"            \"type\": \"integer\"",
+									"        },",
+									"        \"learned_by_pokemon\": {",
+									"            \"type\": \"array\"",
+									"        },",
+									"        \"machines\": {",
+									"            \"type\": \"array\"",
+									"        },",
+									"        \"meta\": {",
+									"            \"type\": \"object\"",
+									"        },",
+									"        \"machines\": {",
+									"            \"type\": \"array\"",
+									"        },",
+									"        \"name\": {",
+									"            \"type\": \"string\"",
+									"        },",
+									"        \"names\": {",
+									"            \"type\": \"array\"",
+									"        },",
+									"        \"past_values\": {",
+									"            \"type\": \"array\"",
+									"        },",
+									"        \"power\": {",
+									"            \"type\": \"integer\"",
+									"        },",
+									"        \"pp\": {",
+									"            \"type\": \"integer\"",
+									"        },",
+									"        \"priority\": {",
+									"            \"type\": \"integer\"",
+									"        },",
+									"        \"stat_changes\": {",
+									"            \"type\": \"array\"",
+									"        },",
+									"        \"super_contest_effect\": {",
+									"            \"type\": \"object\"",
+									"        },",
+									"        \"target\": {",
+									"            \"type\": \"object\"",
+									"        },",
+									"        \"type\": {",
+									"            \"type\": \"object\"",
+									"        },",
+									"    }",
+									"} ",
+									" ",
+									"pm.test(\"Validación del json schema\", function () { ",
+									"   pm.response.to.have.jsonSchema(schema) ",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlapi}}pokemon/{{pokemon}}",
+							"host": [
+								"{{urlapi}}pokemon"
+							],
+							"path": [
+								"{{pokemon}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"El código de éxito es 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Escenarios negativos",
+			"item": [
+				{
+					"name": "Consultar pokemon inexistente",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"pokemon\", \"Jigglypuff\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlapi}}pokemon/{{pokemon}}",
+							"host": [
+								"{{urlapi}}pokemon"
+							],
+							"path": [
+								"{{pokemon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar movimiento inexistente",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"name\", \"razor\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//limpiar variables",
+									"pm.environment.unset(\"name\");",
+									"pm.environment.unset(\"pokemon\");",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlapi}}move/{{name}}",
+							"host": [
+								"{{urlapi}}move"
+							],
+							"path": [
+								"{{name}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"//Capstone Project - Escenarios negativos",
+							"pm.test(\"El código de error es 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							"//El pokemon no existe",
+							"pm.test(\"El mensaje de error es Not Found\", function() {",
+							"    console.log(pm.response.status)",
+							"    pm.expect(pm.response.status).to.be.equal(\"Not Found\")",
+							"});"
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"//Agregar una función de prueba que valide el tiempo de respuesta bajo de 700 ms",
+					"pm.test(\"El tiempo de respuesta es menor a 700ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(700);",
+					"});"
+				]
+			}
+		}
+	]
+}
