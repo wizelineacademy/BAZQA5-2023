@@ -48,7 +48,7 @@ Podemos guardar el capabilitie y posteriormente seleccionamos `Start Session`.
 ![appium_inspector.png](img%2Fappium_inspector.png)
 
 ### Android Studio
-Una vez instalado crear un dispositivo para poder correr el set de pruebas.
+Una vez instalado crear un dispositivo para correr el set de pruebas.
 
 ![Android_studio.png](img%2FAndroid_studio.png)
 
@@ -61,8 +61,8 @@ Una vez instalado crear un dispositivo para poder correr el set de pruebas.
 
 #### 2.- Instalar librerías - [requirements.txt](requirements.txt)
 
-Para instalar las dependencias utilizar el siguiente comando:
-  
+Utilizar el siguiente comando para instalar las dependencias. 
+
  ```bash
 pip install -r requirements.txt
 ```
@@ -84,26 +84,25 @@ reports/android
 pretty
 features/
 ```  
+El `tag` indica el tipo de prueba a ejecutar:
 
-### 1.- Pruebas de regresión 
-* Modificar el parámetro `--tags = regression`
+**1.- Regresión** `--tags = regression`
 
-### 2.- Pruebas de humo
-* Modificar el parámetro `--tags = smoke`
+**2.- Humo** `--tags = smoke`
  
-**Nota**: Cada tag del tipo de prueba se debe colocar en los **features** en la parte superior del escenario (Scenario).  
+**Nota**: Se debe colocar en la parte superior del `Scenario` de cada **features**. 
 
 ![Etiqueta_feature.png](img%2FEtiqueta_feature.png)
 
 ## Reportes Allure  📋
 
-Para generar un reporte desde cero con Allure, es necesario seguir los siguientes pasos:
+Para generar un reporte desde cero, es necesario seguir los siguientes pasos:
 
 1.- Instalar **allure** en la terminal de Pycharm 
 ```bash
     brew install allure #macOS
   ```  
-2.- Agregamos la llamada a allure en `enviroment.py` para generar el reporte al terminar la ejecución de los casos de prueba. 
+2.- Agregar la llamada a allure en `enviroment.py` para generar el reporte al terminar la ejecución del set de prueba. 
 
 ```bash
 def after_scenario(context, scenario):
@@ -113,7 +112,7 @@ def after_scenario(context, scenario):
 **Ejemplo:**
 
 ## Análisis de código estático 🧐
-Escaneo de código en busca de errores, lo ejecutamos en la carpeta de steps y screens.
+Escaneo de código en busca de errores, se ejecuta en la carpeta de steps y screens.
 
 **1.- Instalación**
 ```
