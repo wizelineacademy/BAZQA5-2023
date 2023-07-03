@@ -39,7 +39,7 @@ Capabilities:
  "appActivity": ".MainActivity"
 }
 ```
-**Nota**: `deviceName` depende del modelo de dipositivo a utilizar.  
+**Nota**: `deviceName` depende del modelo de dispositivo a utilizar.  
 
 Podemos guardar el capabilitie y posteriormente seleccionamos `Start Session`.
 
@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 ## Ejecución 🤖
 
-Configurar interprete para correr el set de pruebas.
+Configurar intérprete para correr el set de pruebas.
 
 ![Configuracion_Python.png](img%2FConfiguracion_Python.png)
 
