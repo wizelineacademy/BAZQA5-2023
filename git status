@@ -1,0 +1,722 @@
+[33mcommit b63f98b81960d8ac7a8762fa3c7ef5180e764675[m[33m ([m[1;36mHEAD -> [m[1;32mrama2[m[33m, [m[1;31morigin/rama2[m[33m)[m
+Author: Spchavez13 <roberto.chavez@gmail.com>
+Date:   Tue May 30 16:16:09 2023 -0600
+
+     quinto cambio
+
+[33mcommit 5569232b9209529f471e9fcdf29793bd4f461a17[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 278e50b 435d268
+Author: Spchavez13 <roberto.chavez@gmail.com>
+Date:   Tue May 30 15:31:32 2023 -0600
+
+     cambios
+
+[33mcommit 278e50b292d2657c99c797547501e2aa1aae8206[m
+Author: Spchavez13 <roberto.chavez@gmail.com>
+Date:   Tue May 30 14:54:25 2023 -0600
+
+    cambio en la rama2
+
+[33mcommit 435d268859a09b62283e10e950517b03bf1042e2[m
+Author: Spchavez13 <roberto.chavez@gmail.com>
+Date:   Tue May 30 14:54:25 2023 -0600
+
+    tercer cambio
+
+[33mcommit 65bbc1d3646110c006d8f5c38e6ae654172f9033[m
+Author: Spchavez13 <roberto.chavez@gmail.com>
+Date:   Tue May 30 14:51:17 2023 -0600
+
+    Segundo cambio
+
+[33mcommit 41f6112831b523fe6ff3dd4cbd61cdb725804968[m
+Author: Spchavez13 <roberto.chavez@gmail.com>
+Date:   Tue May 30 14:49:21 2023 -0600
+
+    Primer cambio de informacion
+
+[33mcommit 6d467f6d76d1e38e78a15fb7969ec485b6e6a860[m
+Author: Spchavez13 <111693734+Spchavez13@users.noreply.github.com>
+Date:   Tue May 30 14:24:21 2023 -0600
+
+    Create prueba
+
+[33mcommit 523e70195c9c6695a859e08025c3e47c9ef97ed6[m
+Author: Mauricio Sanchez <115300095+mausanpar@users.noreply.github.com>
+Date:   Tue May 30 09:03:33 2023 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 5094c61ad255b8efcded385754a36103159ac6b1[m
+Author: Mauricio Sanchez <115300095+mausanpar@users.noreply.github.com>
+Date:   Mon May 29 09:07:41 2023 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 1bc8c1ad31ab0f3efd4d877eac99e3c33bf17d82[m
+Author: Mauricio Sanchez <115300095+mausanpar@users.noreply.github.com>
+Date:   Mon May 29 08:27:03 2023 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 21dd6b3152ea21eb81eefc3ff5a430876db58443[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed May 24 16:07:54 2023 -0600
+
+    Update README.md
+
+[33mcommit 3194f102c41e0976ac9d666e0b06f5d0628da5ff[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed May 24 14:39:08 2023 -0600
+
+    Update README.md
+
+[33mcommit 4235251fb6019d8dea230bce7f3ce4ebbd4700d6[m
+Author: Mauricio Sanchez <115300095+mausanpar@users.noreply.github.com>
+Date:   Wed May 24 12:37:01 2023 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit c5c049c530def90844cd921a2b4b107b0765dd53[m
+Author: Mauricio Sanchez <115300095+mausanpar@users.noreply.github.com>
+Date:   Wed May 24 12:35:11 2023 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 2196dec624008a80b005c02c6cb712a2d63a8b61[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue May 23 21:04:46 2023 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 53ffeb3656e642aadabfa267e4c3e8a01bf6f58b[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue May 23 11:51:16 2023 -0600
+
+    Update README.md
+
+[33mcommit db498e09a0a151ee14bc8a977488dc1a14fa2586[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue May 23 09:18:54 2023 -0600
+
+    Update README.md
+
+[33mcommit eff0bd01079f02c66b8fb38415f3888678dc6711[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue May 23 09:17:43 2023 -0600
+
+    Delete Semana 5 directory
+
+[33mcommit baf801ff825117b1b5c777537a18553aea5f6623[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue May 23 09:17:34 2023 -0600
+
+    Delete Semana 4 directory
+
+[33mcommit ad3072517c6d193f098635bf9742afb88eb95cf5[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue May 23 09:17:25 2023 -0600
+
+    Delete Semana 3 directory
+
+[33mcommit bca92421a70290cc9e6b0a67b7ab10a571bf03c8[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue May 23 09:17:17 2023 -0600
+
+    Delete Semana 2 directory
+
+[33mcommit ecf9fb6750fc9513d6ce5dd37d99fac14c79559c[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue May 23 09:17:06 2023 -0600
+
+    Delete Semana 1 directory
+
+[33mcommit 7650bb66af16fd5346090e040d988c83aed1ba33[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue May 23 09:15:38 2023 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 1496fb264d26a6e298fe76604cddf28e3104ee6f[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue May 23 09:12:29 2023 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 7a3b941e8b9be2ad7d8d4ed930326de84eebf7cb[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 16:44:48 2023 -0600
+
+    Update README.md
+
+[33mcommit 700cb105e9ebff6cdaf0fe2eb3c813a02db04936[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 15:41:30 2023 -0600
+
+    Update README.md
+
+[33mcommit 71ebb064b72599e496f2984742c491a9354d1e79[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 12:48:18 2023 -0600
+
+    Update README.md
+
+[33mcommit 7fb406c32eb2f6a3df0ac4fded4b01552b03c3c8[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 12:48:01 2023 -0600
+
+    Update README.md
+
+[33mcommit 67d4a08831eb2b127b9b66428c2dfeea9679cfd0[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 12:47:42 2023 -0600
+
+    Update README.md
+
+[33mcommit 51f6fe0f98864763da7b3be2afd353032bfe2820[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 12:46:48 2023 -0600
+
+    Update README.md
+
+[33mcommit 2c49dac30924ec7b862fff401f09a873c69461c9[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 12:46:26 2023 -0600
+
+    Update README.md
+
+[33mcommit 27be7d2f9bad2ce852ee6f57d8286f927af83212[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 12:44:44 2023 -0600
+
+    Update README.md
+
+[33mcommit 04d62db866fe28ed80f9ca92ce3171e578d88a50[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 12:43:02 2023 -0600
+
+    Update README.md
+
+[33mcommit 36b1102c299a70d4b77236e936b628cd0f0ae0a9[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 12:42:06 2023 -0600
+
+    Update README.md
+
+[33mcommit 2cf88dfc2dcc92215ca98740eaa8787b2f411f9c[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 22 12:41:55 2023 -0600
+
+    Update README.md
+
+[33mcommit 96a86bae4744ae84c426acc2bf2bc6cafbc82d2d[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Fri May 19 12:36:18 2023 -0600
+
+    Update README.md
+
+[33mcommit e3e352ea02cad6b2509e074c50eaa9a195791551[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Fri May 19 12:35:47 2023 -0600
+
+    Update README.md
+
+[33mcommit 877c8bca47cbc2e9c8038a35186871730c1b2075[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu May 18 11:00:18 2023 -0600
+
+    Update README.md
+
+[33mcommit 4d01027e9543d5061cbc7d85d59543afa1e38a1d[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu May 18 10:58:21 2023 -0600
+
+    Update README.md
+
+[33mcommit 19976d0a688d442675457d425aef8e05aa4ce1d2[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu May 18 10:52:31 2023 -0600
+
+    Update README.md
+
+[33mcommit d318319d97d1160a231da141929d067214057e28[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu May 18 10:51:28 2023 -0600
+
+    Update README.md
+
+[33mcommit ba79e6a0ec325312179deb32263747160910f2b2[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu May 18 10:49:46 2023 -0600
+
+    Update README.md
+
+[33mcommit e9d8d2e53fae6c04c881ebca0e544735e477b0e2[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 8 14:49:03 2023 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 8014688ad33dd90967a68b8eddad42950f016333[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 8 14:40:19 2023 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit b2a78f1bafbed476a0acb6f32f4220992b08baa0[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon May 8 14:33:20 2023 -0600
+
+    Update README.md
+
+[33mcommit cda2431a2406eeed64b095767200602d0a3fc43e[m
+Author: jennloyola <94467952+jennloyola@users.noreply.github.com>
+Date:   Fri Nov 11 18:37:07 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit a5f4a96e4ea1654ce6f822a3edfeda28c54c0443[m
+Author: jennloyola <94467952+jennloyola@users.noreply.github.com>
+Date:   Fri Nov 11 14:39:34 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 5d2da6861e8d69b6dd5201abe0a635ab9f22a5c3[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Nov 10 17:35:15 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 432a60443b9337ae550ebe7c798ae8f2c52d1c52[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Nov 10 17:28:54 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 66e62279b4343751a17f6b397c48de308b6fe79a[m
+Author: jennloyola <94467952+jennloyola@users.noreply.github.com>
+Date:   Thu Nov 10 10:35:06 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit c1a15e26fca9bb0bfb0d6db1a78bc0ce96472164[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Nov 9 11:40:07 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 61b5445c7653f8f889642f1b7b8d4cdd4664dfef[m
+Author: jennloyola <94467952+jennloyola@users.noreply.github.com>
+Date:   Fri Nov 4 23:17:50 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 971d342cb8010ebd0a0a42979e690888e6e8cbd1[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Fri Nov 4 09:30:27 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 8ab05accfc614a5a345e803b89c19ce4b2c12989[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Fri Nov 4 09:20:53 2022 -0600
+
+    Update README.md
+
+[33mcommit f20a45adc780ee65d78d05ddafa86a8c547d178a[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Fri Nov 4 09:20:34 2022 -0600
+
+    Update README.md
+
+[33mcommit 38445dee4bb4fbd71f0c4d525a3ca686673bae53[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Nov 2 12:52:52 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 0ebd4f32b89072085771e48efa07d9d5438ec16f[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Nov 1 16:58:57 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 6872bd0a5597a762ae061ef04ae150b52daf0b74[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Nov 1 10:30:49 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 5562c56f7bd59aa5aabf4eff5713fd4740fea9b4[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Nov 1 10:30:28 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit de150911a97e9c197b5ca4a6eb8dad0cff07f070[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Nov 1 10:29:59 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit b63b50af05df999d100b6fb33ecc479a851c7bc7[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Nov 1 09:17:24 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 30e5021645a0520d34ebeb8ebc1231e8dc97eceb[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Nov 1 09:15:19 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 78d68163eebef29fbf5124bd790b9e6de9a460ad[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Nov 1 08:54:56 2022 -0600
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit e880b6eb47053780600694a5ecba58d37008b4d3[m
+Author: jennloyola <94467952+jennloyola@users.noreply.github.com>
+Date:   Thu Oct 27 17:50:56 2022 -0500
+
+    Update README.md
+
+[33mcommit 75d319efbc53c72fa8e0e9ac6ce79b1932055e4a[m
+Author: jennloyola <94467952+jennloyola@users.noreply.github.com>
+Date:   Thu Oct 27 16:57:11 2022 -0500
+
+    Update README.md
+
+[33mcommit 231ec88e76f5ab76c8a3d7aadfee17c636f8b35d[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 15:44:30 2022 -0500
+
+    Update README.md
+
+[33mcommit 40b20966ea3ec551b2dc779221d08892fe8a3817[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 15:43:29 2022 -0500
+
+    Update README.md
+
+[33mcommit 1369ab7ea6f416fc5134cbb3df3c9e33d1da297c[m
+Author: jennloyola <94467952+jennloyola@users.noreply.github.com>
+Date:   Thu Oct 27 12:57:37 2022 -0500
+
+    Update README.md
+
+[33mcommit 882bf1dff9096d4019be7b4fdca22bedd65e061b[m
+Author: jennloyola <94467952+jennloyola@users.noreply.github.com>
+Date:   Thu Oct 27 12:53:00 2022 -0500
+
+    Update README.md
+    
+    Calendly for @Alejandro Garduño @Vic Morales @Eduardo Contreras added
+
+[33mcommit 9f7c1452fcbd1a63e2d4594d2a28e4f439d2042b[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 12:42:14 2022 -0500
+
+    Update README.md
+
+[33mcommit 3f648c54b183df74bd94eda2c6f8721d84713c52[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 12:40:36 2022 -0500
+
+    Update README.md
+
+[33mcommit a239c10750300e0d0d96f2b245267d74467c6b38[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 12:28:04 2022 -0500
+
+    Update README.md
+
+[33mcommit 888774927aca8b16d23c6a6a338cc54f57b85ba0[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 12:20:28 2022 -0500
+
+    Update README.md
+
+[33mcommit f28ce83ab60d9029f68d3d1ce9c82b44a75c5fdc[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 12:14:16 2022 -0500
+
+    Update README.md
+
+[33mcommit 60743022f70c0d5e8491b32890fa8f04113ffb1f[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 11:49:40 2022 -0500
+
+    Update README.md
+
+[33mcommit 9c0748c4320462b970d6d2ae3e66019d58f6a3ce[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 11:27:02 2022 -0500
+
+    Update README.md
+
+[33mcommit e5a0c685788c3b4250ea4b752609eeb4b4ef7c25[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 11:26:34 2022 -0500
+
+    Add files via upload
+
+[33mcommit 1fc2a88c31aecc0a3d6307d328b9e7f721b2f807[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 11:26:13 2022 -0500
+
+    Delete Screen Shot 2022-10-27 at 11.17.56.png
+
+[33mcommit 4d43d22aabfe5f42f3b2024ad3bd3815d3e6617b[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 11:25:54 2022 -0500
+
+    Update README.md
+
+[33mcommit 48737a0abc33333d4630cbf0c75a47d7490c5b80[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 11:24:08 2022 -0500
+
+    Update README.md
+
+[33mcommit 826a1eab43e9419446568ce443e10099c90e9618[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 27 11:18:45 2022 -0500
+
+    Add files via upload
+
+[33mcommit c7279bd50ac821345ebd76eea2dcd675ff027603[m
+Author: jennloyola <94467952+jennloyola@users.noreply.github.com>
+Date:   Wed Oct 26 18:32:20 2022 -0500
+
+    Update README.md
+
+[33mcommit a516d9fe42d66175b076344fa1dd9adefe8cb17e[m
+Author: jennloyola <94467952+jennloyola@users.noreply.github.com>
+Date:   Wed Oct 26 18:31:35 2022 -0500
+
+    Update README.md
+
+[33mcommit ee4adc536d113165108fbe21f413162a318ab840[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 26 08:43:31 2022 -0500
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 3864465928e273e31889eae615a2810b337b27da[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon Oct 24 17:21:26 2022 -0500
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 91129b5e8f3ab0d797d17cb2c8260467560b1324[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Thu Oct 20 21:05:44 2022 -0500
+
+    Update README.md
+
+[33mcommit be454807b760039b4d7f3b2e6636c56233dff206[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 19 14:13:12 2022 -0500
+
+    Update Grabaciones y Presentaciones.md
+
+[33mcommit 4a2e3a5ff854aca94f402b23accfb0c0bf9df8a5[m
+Author: Marco Robles <marco.robles@wizeline.com>
+Date:   Wed Oct 19 13:19:39 2022 -0500
+
+    add folders and remove mds
+
+[33mcommit 72fff031936f39b8217af9f8ce52dbac4d319cf3[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 19 10:56:19 2022 -0500
+
+    Update SEMANA 2.md
+
+[33mcommit 5cd6e6c6114f1b8146bdfdcf269290ba3e4c89d7[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 19 10:56:01 2022 -0500
+
+    Update SEMANA 1.md
+
+[33mcommit c80420fa2459fb53a3bb1b5dbbcdbebe4509bd82[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 19 10:55:14 2022 -0500
+
+    Update SEMANA 2.md
+
+[33mcommit 5df193825ff420e0f766302a945b3c59efbfbce8[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 19 10:53:27 2022 -0500
+
+    Update SEMANA 1.md
+
+[33mcommit 84a7766cb42eae05c9900e4f7ee78c5931abefe2[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 19 10:49:53 2022 -0500
+
+    Update SEMANA 1.md
+
+[33mcommit bb1650cf2c4a8db0040df2812d3027f0d434d8f0[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 19 10:48:05 2022 -0500
+
+    Rename Semana 3 to SEMANA 3.md
+
+[33mcommit 9dbdc184810fc83fd3855889878b842b823531d7[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 19 10:47:49 2022 -0500
+
+    Rename Semana 2 to SEMANA 2.md
+
+[33mcommit 3d932a4da5442b0c808e30f1189e2ba22eaa3b26[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 19 10:47:24 2022 -0500
+
+    Rename README.md to SEMANA 1.md
+
+[33mcommit 8431ee93d5650f6c1c8128e4cb06533bd8d370ee[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Wed Oct 19 10:45:04 2022 -0500
+
+    Rename Semana 1 to Semana 1.md
+
+[33mcommit ee73034ddefe7585dc97a2840207e379d16224d9[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 11:10:12 2022 -0500
+
+    Update Semana 1
+
+[33mcommit b15bad3c1797cd7f379c68da39382838fb69d8f0[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 11:07:51 2022 -0500
+
+    Update Semana 3
+
+[33mcommit d607461c493bd07940c866b545d582f18141e9c0[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 11:07:38 2022 -0500
+
+    Update Semana 2
+
+[33mcommit cae8ebb8689caee08f91bf3de6469a8e1dd8d4c4[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 11:07:20 2022 -0500
+
+    Update Semana 2
+
+[33mcommit 6bdec1334470315f48047fa7afbbf55720120b48[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 11:06:58 2022 -0500
+
+    Update Semana 1
+
+[33mcommit 77700a2e93789f1f32f0002089fa2b017cec2673[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 11:05:22 2022 -0500
+
+    Create Semana 3
+
+[33mcommit 692dc357653c971e7e0f95b2e35f937011dee6d7[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 11:05:12 2022 -0500
+
+    Create Semana 2
+
+[33mcommit df330e4488eb7eeef09359ba3c1895ff6e5c8db3[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 11:05:00 2022 -0500
+
+    Create Semana 1
+
+[33mcommit 76088bef6e8db76348d8cb4b883cb23d2d70e294[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 11:01:38 2022 -0500
+
+    Update README.md
+
+[33mcommit 6937dabd4fbfe22331835ff1b74b03da47917dcf[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 10:53:35 2022 -0500
+
+    Update README.md
+
+[33mcommit d0c28904e2b36761d61d46b92c75dc76324ef720[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 10:14:43 2022 -0500
+
+    Update README.md
+
+[33mcommit a50e995dc59631bf253737eb35350895b49e8c19[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 10:14:06 2022 -0500
+
+    Update README.md
+
+[33mcommit fd2003e291de32c0b66d5eb8b0fc8a58cf1bbd10[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 10:11:18 2022 -0500
+
+    Update README.md
+
+[33mcommit 38f3be4cb8d96d0be0f2ae9dea245a430d7df43f[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 10:10:52 2022 -0500
+
+    Update README.md
+
+[33mcommit 629f3f3eeb2eaaf7b35432bdf4e08531b2ce3b87[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 10:10:13 2022 -0500
+
+    Update README.md
+
+[33mcommit 0a7516abf635622efae75d382e9ce2f9e2054f10[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 10:07:22 2022 -0500
+
+    Update README.md
+
+[33mcommit 82939712e059827cd4286428bfca9391b3b9faea[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Tue Oct 18 10:05:15 2022 -0500
+
+    Create Grabaciones y Presentaciones.md
+
+[33mcommit dfe7bc1f077d027bef192ded05c00787ade6696a[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon Oct 17 18:04:17 2022 -0500
+
+    Update README.md
+
+[33mcommit 1adb8bb3f4f4a9d43c93cc015490299dbdb8e94b[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon Oct 17 18:03:53 2022 -0500
+
+    Update README.md
+
+[33mcommit 11fb7e7fba68920ae93dd9d7c8a3b6a95605c1c3[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon Oct 17 18:03:19 2022 -0500
+
+    Update README.md
+
+[33mcommit 0ef6d3590811871d9ce31b4452bc576c8b5533c4[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon Oct 17 18:01:09 2022 -0500
+
+    Update README.md
+
+[33mcommit 847c3c83efa50234d73aa01f71f669e6c2179d95[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon Oct 17 17:48:08 2022 -0500
+
+    Update README.md
+
+[33mcommit 13a4a8da67af6f13b08ccba1c81d4c0c030b3c7a[m
+Author: Violetabaltazar <114529977+Violetabaltazar@users.noreply.github.com>
+Date:   Mon Oct 17 17:47:56 2022 -0500
+
+    Initial commit
