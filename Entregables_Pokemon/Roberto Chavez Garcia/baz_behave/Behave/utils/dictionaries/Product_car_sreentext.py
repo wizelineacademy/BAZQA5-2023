@@ -1,0 +1,1 @@
+car_screen = {"NAMEPRODUCT": '.text("Camisa Sauce Labs Bolt")', "PRICEPRODUCT": '.text("$15.99")',"LABELCAR": '.text("TU CARRITO")'}

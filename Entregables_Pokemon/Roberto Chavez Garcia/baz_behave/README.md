@@ -1,10 +1,9 @@
 
-# Carrito de Compra APPIUM
+# Proyecto 
 
-Este proyecto contiene la automatización de casos de pruebas de un carrito de compras con la aplicación
-Swag Labs Mobile App
-![img.png](img/App_swaglabs.png)
+Este proyecto contiene la automatización de casos de prueba del modulo de login.
 Para eso es necesario considerar la instalación de las siguientes herramientas de software.
+![img.png](Behave/utils/Imagenes/swaglabs.png) 
 
 * Python3
 * Appium server
@@ -22,7 +21,7 @@ Entrar a la página oficial https://www.python.org/ y descargar de acuerdo al ti
 Ingresar a la página oficial https://appium.io/downloads.html seleccionar Appium Desktop Apps mismo que direccionará a github para que descargue el ejecutable que corresponda a su sistema operativo.
 Una vez instalado dejar los parametros por default Host y Port y oprimir el botón starServer como el que se muestra en la siguiente pantalla:
    
-
+![img.png](Behave/utils/Imagenes/server.png)  
 
 ## Appium inspector
 Para instalar appium inspector es necesario ingresar a la siguiente url https://github.com/appium/appium-inspector/releases mima que direcciona al repositorio que tiene los ejecutables de acuerdo a cada tipo de sistema operativo.   
@@ -30,22 +29,21 @@ Una vez instaldo confirmar que se tenga el mismo host y port que en appium serve
   
 Agregar el capabilitie de acuerdo a las caracteriticas de dipositivo agrego imagen de refrencia y el json de ejemplo:  
 
-
+![img_1.png](Behave/utils/Imagenes/capabilities.png)  
+Nota: `platform_version` y `device_name` depende del modelo de dipositivo android a utilizar
   
 ```bash
-{
-       'platformName': 'Android',
-        'deviceName': 'R5CW30Z8K9N',
-        'app': 'E:\\Users\\1069257\\Documents\\baz_behave\\APP\\sauce_app.apk',
-        "appPackage": "com.swaglabsmobileapp",
-        "appActivity": ".MainActivity"
 
-    }
- Cabe mencionar   que `platform_version` y `device_name` depende del modelo de dipositivo android a utilizar y en `app` modificar la ruta de la app acorde al path en la que se encuentre el proyecto descargado ya que la ruta que se muestra cambia acorde al dispositivo que se esta usando
-```
+
 Una vez genrado el capabilitie
 * Guardar el capabilitie
 * Iniciar la sesión
+* Nota: `platform_version` y `device_name` depende del modelo de dipositivo android a utilizar
+para obtener el 'devices_name' ir la terminal cmd y escribir el comando
+![img_1.png](Behave/utils/Imagenes/adb.png)
+
+y e "Platform_version" es la version instalada de Android  en nuestro dispositivo fisico 
+
 
 
 ## IDE Pycharm Community
@@ -53,23 +51,20 @@ Ingresar a la página oficial https://www.jetbrains.com/es-es/pycharm/ y descarg
 ejecutable Community. Recuerde que durante la instalación se deben ambientar las variables de entorno.
 El mismos ejecutable presenta una pantalla que permite la configuración de las variables de entorno. 
 
-Una vez que se tenga el IDE, instalar los siguientes paquetes con el uso de la terminal.  
-Nota: es importante antes instalar nodeJS para ejecutar los comandos con el prefijo npm. 
-
-
 ### Importar proyecto dentro del IDE
 * Oprimir el menu File
 * De la lista desplegada oprimir el botón Open
 * Buscar el proyecto y oprimir la opción abrir
-
+![.png](Behave/utils/Imagenes/verfinal.png)
 
 ### Configuración del proyecto antes de correr el set de pruebas
 
-Considerar los siguientes requerimientos [requirements.txt](requirements.txt)
+Considerar los siguientes requerimientos [requirements.txt](requirements.txt) Este comando de debe de ejecutar
+en la raiz de la carpeta Behave
 
 Para instalar las dependencias utilizar el siguiente comando
-  
- ```bash
+ ![.png](Behave/utils/Imagenes/requirements.png) 
+
 pip install -r requirements.txt
 ``` 
 
@@ -78,67 +73,97 @@ Dentro de la carpeta utils encontrará un archivo .env que serán las credencial
 STANDARD_USER=
 PASSWORD=
 ```
-
+![.png](Behave/utils/Imagenes/credencial.png) 
 ## Set de pruebas
-
+Para la ejecución de la prueba se debe contar con los siguiente:
+        *adb divices
+		*IDE: PyCharma
+		*Appium Server en ejecución
+		*Appium inspector
+		*Alguna app para control remoto del dispositivo (Vysor, ApoweMirror, etc)
+    
+    Para la Ejecución de las pruebas es necesario iniciar los siguiente: 
+	1. Descargar en el dispositivo el APK sauce_app.apk
+	2. Descargar el proyecto en el equipo a donde se ejecutará 
+	3. Ejecutar la herramienta Appium Server GUI (interfaz entre la APP y el proyecto)
+	3. Ejecutar PyCharm
+    4. Editar el archivo .env como el ejemplo .env_sample de acuerdo a los valores a utilizar, ejemplo:
+        STANDARD_USER=""
+        PASSWORD=""
 Para correr el set de pruebas debe tener la siguiente configuración 
 
-* regression que ejecutaría todos los casos de prueba
+* "Todos los casos"  que ejecutaría todos los casos de prueba 
+para este ejemplo cpn el tag #Regresion
+
+
 dentro del campo parameter colocar lo siguiente
-* ```bash
-  --tags=regression
-  -k
-  -D
-  allure_behave.formatter::AllureFormatter
-  -D
-  platform_version=13
-  -D
-  reports/android
-  -D
-  driver_location=local
-  -D
-  device_name=b2q
-  -f
-  pretty
-  features/
-  ```  
+formatter:--tags=Regresion -f allure_behave.formatter::AllureFormatter -o reports/android -f pretty features/
 
-### Para pruebas de regresion 
-* Tener una nueva configuración en este caso se nombró regressionTest
-* Agregar el parametro `--tags=`(nombre del tag para identificar la prueba de regresion) como se muestra en la imagen.
+* "Smoke"  que ejecutaría una prueba rapida del flujo completo
+"Realizar una compra"
+para este ejemplo con el tag #Smoke
 
-Cada nuevo tag o etiqueta del tipo de prueba se debe colocar en los features especificamente en la parte superior del escenario(Scenario)
-  
+dentro del campo parameter colocar lo siguiente
+formatter:--tags=Smoke -f allure_behave.formatter::AllureFormatter -o reports/android -f pretty features/
+
+#  Folder Structure
+     Baz_Behave/
+	├── APP/
+	│      ├──sauce_app.apk	
+	├── Behave/features
+	│      ├── Add_product_car.feature
+	│      ├── Checkout.feature
+	│      ├── login.feature
+	│      ├── Poruct_card.feature
+    │      ├── Product_Filter.feature
+	├── reports/
+	│      ├──android	
+	├── screens/
+	│      ├── cart_sreens.py
+	│      ├── checkout_sreens.py
+	│      ├── confirmacion_sreens.py
+	│      ├── filter_sreens.py
+    │      ├── log_in_sreens.py
+    │      ├── productos_sreens.py
+    │      ├── summary_sreens.py
+	├── steps/
+	│      ├── Add_car.py
+	│      ├── checkot_steps.py
+	│      ├── filter_steps.py
+	│      ├── log_in_steps.py
+    │      ├── Product_car.py
+	├── utils/
+	│      ├── dictionaries/
+	│      ├── Imagenes
+	│      ├── common_actoins.py
+	│      ├── .env
+	│      ├── environment.py
+	│         
+	├── venv/
+	       ├──── README.md
+           └── requirements.txt
+   
+    
+
 ### Reportes Allure  
 
-Para generar reporte desde cero con Allure, se deben seguir los siguientes pasos y comandos:
+Generación de reporte:
+	El framework cuenta con Allure para la obtención del reporte de la ejecución y se obtiene 
+	ejecutando el comando .../Behave/allure serve reports/android, al ejecutar el comando se 
+    abrirá una página en explorador 
+	determinado con los reportes.
+Los reportes se generan de manera automatica al terminar la ejecuacion:
 
-* Intallar allure en nuestra terminal de pycharm 
-```bash
-    pip install allure-behave
-  ```  
-* Agregar el paquete allure-behave  
-* Posicionarse hasta la carpeta Behave dentro de la terminal y correr los siguientes comandos
-```bash
-  behave #para ver si corren todos los features 
-  
-  behave -f allure_behave.formatter:AllureFormatter -o reports/ features # para generar la carpeta reports y correr las pruebas 
-  
-  allure serve reports/ #para mostrar el reporte
-```
-### Herramienta de código estático Flake 8
-Para instalar Flake8 , abra un shell interactivo y ejecute:
-```bash
-python<version> -m pip install flake8
- ``` 
-Para correr el flake sería con el comando
-```bash
-python<version> flake8 ./steps  
- ``` 
-En el cual al momento de ejecutarlo podemos ver aquellos errores que marca dependiendo del código.
-![img.png](img/flake8.png)
-### Nota 
-Se debe crear el archivo .env y colocar dentro las variables que se encuentran en el archivo .env-sample ya que por seguridad no se comparte el archivo .env
 
-### Hecho :
+![.png](Behave/utils/Imagenes/reporte.png) 
+![.png](Behave/utils/Imagenes/rep.png) 
+
+Ejecucion simpre sin utilizar los reportes de ALLURE comentando la linea 22 
+del archivo environment.py para efectos de visualisar reportes planos
+
+![.png](Behave/utils/Imagenes/simple.png) 
+
+### Creado  
 Roberto Carlos Chavez Garcia
+   
+

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/APPIUM.iml" filepath="$PROJECT_DIR$/.idea/APPIUM.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../GitHub/QA_team/.idea/QA_team.iml" filepath="$PROJECT_DIR$/../GitHub/QA_team/.idea/QA_team.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/baz_project_verfinal.iml" filepath="$PROJECT_DIR$/.idea/baz_project_verfinal.iml" />
     </modules>
   </component>
 </project>

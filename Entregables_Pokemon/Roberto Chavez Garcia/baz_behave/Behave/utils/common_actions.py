@@ -1,6 +1,5 @@
 from appium.webdriver.common.touch_action import TouchAction
-from utils.dictionaries.cordinates_properties import COORDINATES
-
+from utils.dictionaries.swipe_text import COORDINATES
 
 class CommonActions(object):
 
@@ -22,7 +21,7 @@ class CommonActions(object):
         text_field = self.find_element(*locator)
         text_field.send_keys(text)
 
-    def get_text_of_element(self, *locator):
+    def get_text_of_element(self, *locator,):
         return self.driver.find_element(*locator).text
 
     def scroll1(self, *locator):
