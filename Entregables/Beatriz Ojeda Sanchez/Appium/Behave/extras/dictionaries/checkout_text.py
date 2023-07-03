@@ -1,0 +1,3 @@
+FORM = {"NAME": "Beatriz", "LAST_NAME": "Ojeda", "POSTAL_CODE": "14260"}
+
+PAGE_TEXTS = {"FINAL_PAGE": "GRACIAS POR SU ORDEN"}

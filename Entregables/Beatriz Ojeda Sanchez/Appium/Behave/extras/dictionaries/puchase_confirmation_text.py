@@ -1,0 +1,1 @@
+puchase_confirmation = {"message_confirmation": '.text("GRACIAS POR SU ORDEN")'}

@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "e14aef6e-7ee7-4b37-a69b-a540edbe2e4f",
+		"name": "EntregableBeatriz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22433427"
+	},
+	"item": [
+		{
+			"name": "Pokemon1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"JSON válido\", function () {\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"});\r",
+							"\r",
+							"\r",
+							"var data = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"url\",data.abilities[0].ability.url);\r",
+							"\r",
+							"pm.test(\"Validar el codigo HTTP\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar tiempo de respuesta menor a 700 ms\", function () {\r",
+							"pm.expect(pm.response.responseTime).to.be.below(700);});\r",
+							"\r",
+							"pm.test(\"Validacion learned_by_pokemon\", ()=> { \r",
+							"    pm.response.to.have.jsonSchema(schema); \r",
+							"});\r",
+							"\r",
+							"var data = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"movimientos\",data.moves[0].move.name);\r",
+							"\r",
+							"\r",
+							"var data = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"nombreFav\",data.id);\r",
+							"console.log(data.id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "9f73105f59a0d2988149965cca6edd9fc03349d7",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{urlPoke}}/api/v2/pokemon/cubone",
+					"host": [
+						"{{urlPoke}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						"cubone"
+					],
+					"query": [
+						{
+							"key": "ability",
+							"value": "rock-head",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"JSON válido\", function () {\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"});\r",
+							"\r",
+							"var data = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"nombre\",data.name);\r",
+							"console.log(data.name)\r",
+							"\r",
+							"\r",
+							"var data = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"nombrePok\",data.learned_by_pokemon[33]);\r",
+							"console.log(data.learned_by_pokemon[33])\r",
+							"\r",
+							"\r",
+							"pm.test(\"Validar el codigo HTTP\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar tiempo de respuesta menor a 700 ms\", function () {\r",
+							"pm.expect(pm.response.responseTime).to.be.below(700);});\r",
+							"\r",
+							" \r",
+							"pm.test(\"Validacion learned_by_pokemon\", ()=> { \r",
+							"    pm.response.to.have.jsonSchema(schema); \r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "9f73105f59a0d2988149965cca6edd9fc03349d7",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{urlPoke}}/api/v2/move/{{movimientos}}",
+					"host": [
+						"{{urlPoke}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"move",
+						"{{movimientos}}"
+					],
+					"query": [
+						{
+							"key": "ability",
+							"value": "rock-head",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "test",
+			"type": "string"
+		},
+		{
+			"key": "name",
+			"value": "test",
+			"type": "string"
+		}
+	]
+}
