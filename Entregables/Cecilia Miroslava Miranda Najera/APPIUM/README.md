@@ -23,9 +23,8 @@ y oprimir el botón **startServer** como se muestra en la siguiente pantalla:
 ![appium_server_run.png](img%2Fappium_server_run.png)
 
 ### Appium Inspector
-Una vez instalado: 
+Una vez instalado configurar los parámetros:
 
-1.- Configurar...
 ```bash
 Host: 0.0.0.0, 
 Port: 4723 
@@ -39,11 +38,11 @@ Capabilities:
  "appActivity": ".MainActivity"
 }
 ```
-**Nota**: `deviceName` depende del modelo de dipositivo a utilizar  
+**Nota**: `deviceName` depende del modelo de dipositivo a utilizar.  
 
-2.- Guardar el capabilitie e iniciar la sesión.
+Posteriormente podemos guardar el capabilitie y seleccionamos `Start Session`.
 
-**Importante**: Es necesario que Appium server ya se encuentre iniciado.
+**Importante**: Appium server ya debe estar iniciado.
 
 ![appium_inspector.png](img%2Fappium_inspector.png)
 
@@ -53,8 +52,6 @@ Una vez instalado crear un dispositivo para emular las pruebas.
 ![Android_studio.png](img%2FAndroid_studio.png)
 
 ### IDE Pycharm Community
-
-Se requiere tener nodeJS para ejecutar los comandos con el prefijo npm. 
 
 #### 1.- Importar proyecto dentro del IDE
 * Oprimir el menu File
@@ -71,7 +68,7 @@ pip install -r requirements.txt
 
 ## Ejecución 🤖
 
-Para correr el set de pruebas se debe tener la siguiente configuración: 
+Configurar interprete para correr el set de pruebas.
 
 ![Configuracion_Python.png](img%2FConfiguracion_Python.png)
 
@@ -88,10 +85,10 @@ features/
 ```  
 
 ### 1.- Pruebas de regresión 
-* Modificar el parametro `--tags=regression`
+* Modificar el parámetro `--tags = regression`
 
 ### 2.- Pruebas de humo
-* Modificar el parametro `--tags=smoke`
+* Modificar el parámetro `--tags = smoke`
  
 **Nota**: Cada tag del tipo de prueba se debe colocar en los **features** en la parte superior del escenario (Scenario).  
 
@@ -105,7 +102,7 @@ Para generar un reporte desde cero con Allure, es necesario seguir los siguiente
 ```bash
     brew install allure #macOS
   ```  
-2.- Agregamos la llamada a allure en enviroment.py para generar el reporte al terminar la ejecución de los casos de prueba. 
+2.- Agregamos la llamada a allure en `enviroment.py` para generar el reporte al terminar la ejecución de los casos de prueba. 
 
 ```bash
 def after_scenario(context, scenario):
@@ -115,7 +112,7 @@ def after_scenario(context, scenario):
 **Ejemplo:**
 
 ## Análisis de código estático 🧐
-Escaneo de código en busca de errores, lo ejecutamos en steps y screens.
+Escaneo de código en busca de errores, lo ejecutamos en la carpeta de steps y screens.
 
 **1.- Instalación**
 ```
