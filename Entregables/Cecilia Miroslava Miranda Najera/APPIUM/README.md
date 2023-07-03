@@ -58,7 +58,7 @@ Una vez instalado crear un dispositivo para emular las pruebas.
 * De la lista desplegada oprimir el botón Open
 * Buscar el proyecto y oprimir la opción abrir
 
-#### 2.- Instalar librerias - [requirements.txt](requirements.txt)
+#### 2.- Instalar librerías - [requirements.txt](requirements.txt)
 
 Para instalar las dependencias utilizar el siguiente comando:
   
@@ -124,6 +124,7 @@ flake8 ./steps
 flake8 ./screens
  ```
 **3.- Resultado**
+
 ![flake8.png](img%2Fflake8.png)
 
 ## Autor 👩‍💻
