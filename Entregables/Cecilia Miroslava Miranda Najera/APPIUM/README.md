@@ -15,15 +15,16 @@ Proceso de instalación y configuración necesaria para ejecutar los casos de pr
   
 ## Configuración ⚙️
 ### Appium Server
-Una vez instalado dejar los parametros por default (host, port) 
+Una vez instalado mantener los parámetros `host y port` por default.
 
 ![appium_server.png](img%2Fappium_server.png)
-y oprimir el botón **startServer** como se muestra en la siguiente pantalla:
+
+Oprimir el botón **startServer** para iniciarlo.
 
 ![appium_server_run.png](img%2Fappium_server_run.png)
 
 ### Appium Inspector
-Una vez instalado configurar los parámetros:
+Una vez instalado configurar los parámetros necesarios:
 
 ```bash
 Host: 0.0.0.0, 
@@ -40,23 +41,23 @@ Capabilities:
 ```
 **Nota**: `deviceName` depende del modelo de dipositivo a utilizar.  
 
-Posteriormente podemos guardar el capabilitie y seleccionamos `Start Session`.
+Podemos guardar el capabilitie y posteriormente seleccionamos `Start Session`.
 
-**Importante**: Appium server ya debe estar iniciado.
+**Importante**: `Appium server` ya debe estar iniciado.
 
 ![appium_inspector.png](img%2Fappium_inspector.png)
 
 ### Android Studio
-Una vez instalado crear un dispositivo para emular las pruebas.
+Una vez instalado crear un dispositivo para poder correr el set de pruebas.
 
 ![Android_studio.png](img%2FAndroid_studio.png)
 
 ### IDE Pycharm Community
 
 #### 1.- Importar proyecto dentro del IDE
-* Oprimir el menu File
-* De la lista desplegada oprimir el botón Open
-* Buscar el proyecto y oprimir la opción abrir
+* En el menú `File`
+* Seleccionar `Open`
+* Buscar el proyecto y abrir
 
 #### 2.- Instalar librerías - [requirements.txt](requirements.txt)
 
