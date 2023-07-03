@@ -8,7 +8,7 @@ def before_scenario(context, scenario):
     desired_caps = {
         'platformName': 'Android',
         'deviceName': 'emulator-5554',
-        'app': '/Users/cmirandan/PycharmProjects/baz_behave/APP/sauce_app.apk',
+        'app': '/Users/cmirandan/Documents/GitHub/BAZQA5-2023/Entregables/Cecilia Miroslava Miranda Najera/APPIUM/APP/sauce_app.apk',
         "appPackage": "com.swaglabsmobileapp",
         "appActivity": ".MainActivity"
     }
@@ -28,5 +28,5 @@ def before_all(context):
 
 
 def after_scenario(context, scenario):
-    subprocess.run("allure serve reports/android", shell=True)
+    #subprocess.run("allure serve reports/android", shell=True)
     context.driver.quit()

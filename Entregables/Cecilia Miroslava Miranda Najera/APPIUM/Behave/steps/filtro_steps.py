@@ -23,7 +23,6 @@ def step_impl(context):
 @Then("Validar que la lista de productos se ordene de manera correcta")
 def step_impl(context):
     filtro_screen = FiltroScreen(context)
-    #filtro_screen.assert_compara(filtro_screen.min_price, filtro_screen.max_price)
     if filtro_screen.min_price < filtro_screen.max_price:
         return True
     else:
