@@ -16,6 +16,9 @@ Este proyecto contiene algunos escenarios de Swag Labs, los casos de prueba son 
 - Gherkins
 - Appium inspector
 - Behave
+  
+### Instalaciòn
+Instalar las librerias del archivo requirements.txt
 
 ### Correr Prueba
 - Comando general : behave features/
