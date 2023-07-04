@@ -1,0 +1,482 @@
+{
+	"info": {
+		"_postman_id": "10b57336-dbb5-47b4-8c3a-84038f169154",
+		"name": "PokemonAPi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6698527"
+	},
+	"item": [
+		{
+			"name": "Escenarios positivos",
+			"item": [
+				{
+					"name": "Escenarios positivos",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let myResponse = pm.response.json();",
+									"let char = myResponse.learned_by_pokemon[0];",
+									"pm.environment.set(\"moName\", char.name)",
+									"pm.environment.set(\"moUrl\", char.url)",
+									"",
+									"pm.test(\"Status  de respuesta 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Se encuenta la respuesta en OK\", function () {",
+									"    pm.response.to.be.ok;",
+									"});",
+									"",
+									"pm.test(\"Respues de Json\", function () {",
+									"    pm.response.to.not.have.jsonBody;",
+									"});",
+									"",
+									"pm.test(\"El nombre es charmander\", function () {",
+									"    pm.expect(char.name).to.eql(pm.environment(\"moName\"));",
+									"});",
+									"",
+									"console.log();",
+									"pm.test(\"La url pertenece a charmander\", function () {",
+									"    pm.expect(char.url).to.eql(pm.environment.get(\"moUrl\"));",
+									"});",
+									"",
+									"",
+									"",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlPokemon}}/pokemon/{{pokemonSeleccionado}}",
+							"host": [
+								"{{urlPokemon}}"
+							],
+							"path": [
+								"pokemon",
+								"{{pokemonSeleccionado}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Escenarios negativos",
+			"item": [
+				{
+					"name": "Escenarios negativos",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status  de respuesta 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"No se encuentra la respuesta\", function () {",
+									"    pm.response.to.have.status(\"Not Found\");",
+									"});",
+									"",
+									"pm.test(\"Sin json\", function () {",
+									"    pm.response.to.not.have.jsonBody;",
+									"});",
+									"",
+									"",
+									"",
+									"",
+									"",
+									"",
+									"",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlPokemon}}/pokemon/{{pokemonInexistente}}",
+							"host": [
+								"{{urlPokemon}}"
+							],
+							"path": [
+								"pokemon",
+								"{{pokemonInexistente}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Quien es ese Pokemon?",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Tiempo < o = 700\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(700);",
+							"});",
+							"",
+							"pm.test(\"El pokemon es charmander\", function(){",
+							"    var body = JSON.parse(responseBody);",
+							"    console.log(body.results);",
+							"    for (var i = 0;i<body.results.length;i++) {",
+							"        if (body.results[i].name ==\"charmander\") {",
+							"            pm.environment.set(\"name\", body.results[i].name)",
+							"            pm.environment.set(\"url\", body.results[i].url)",
+							"            break",
+							"            }",
+							"       ",
+							"        }",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"name\", \"\");",
+							"pm.environment.set(\"url\", \"\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n"
+				},
+				"url": {
+					"raw": "{{urlPokemon}}/pokemon",
+					"host": [
+						"{{urlPokemon}}"
+					],
+					"path": [
+						"pokemon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movimientos de Charmander",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let myResponse = pm.response.json();",
+							"let move = myResponse.moves[0].move;",
+							"pm.environment.set(\"moveName\", move.name)",
+							"pm.environment.set(\"moveUrl\", move.url)",
+							"",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Tiempo < a 700\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(700);",
+							"});",
+							"",
+							"",
+							"pm.test(\"El primero movimiento es mega-punch\", function () {",
+							"    pm.expect(move.name).to.eql(pm.environment.get(\"moveName\"));",
+							"});",
+							"",
+							"pm.test(\"Validar url del movimiento\", function () {",
+							"    pm.expect(move.url).to.eql(pm.environment.get(\"moveUrl\"));",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.unset(\"moveName\");",
+							"pm.environment.unset(\"moveUrl\");",
+							"pm.environment.set(\"moveName\", \"\")",
+							"pm.environment.set(\"moveUrl\", \"\")",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schemaPokemonMovimientos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const schema = {",
+							"    \"type\": \"object\",",
+							"    \"required\": [",
+							"        \"abilities\",",
+							"        \"base_experience\",",
+							"        \"forms\",",
+							"        \"game_indices\",",
+							"        \"height\",",
+							"        \"held_items\",",
+							"        \"id\",",
+							"        \"is_default\",",
+							"        \"location_area_encounters\",",
+							"        \"moves\",",
+							"        \"name\",",
+							"        \"order\",",
+							"        \"past_types\",",
+							"        \"species\",",
+							"        \"sprites\",",
+							"        \"stats\",",
+							"        \"types\",",
+							"        \"weight\"",
+							"    ],",
+							"    \"properties\": {",
+							"        \"abilities\": {",
+							"            \"type\": \"array\"",
+							"        },",
+							"        \"base_experience\": {",
+							"            \"type\": \"integer\"",
+							"        },",
+							"        \"forms\": {",
+							"            \"type\": \"array\"",
+							"        },",
+							"        \"game_indices\": {",
+							"            \"type\": \"array\"",
+							"        },",
+							"        \"height\": {",
+							"            \"type\": \"integer\"",
+							"        },",
+							"        \"held_items\": {",
+							"            \"type\": \"array\"",
+							"        },",
+							"        \"id\": {",
+							"            \"type\": \"integer\"",
+							"        },",
+							"        \"is_default\": {",
+							"            \"type\": \"boolean\"",
+							"        },",
+							"        \"location_area_encounters\": {",
+							"            \"type\": \"string\"",
+							"        },",
+							"        \"moves\": {",
+							"            \"type\": \"array\"",
+							"        },",
+							"        \"name\": {",
+							"            \"type\": \"string\"",
+							"        },",
+							"        \"order\": {",
+							"            \"type\": \"integer\"",
+							"        },",
+							"        \"past_types\": {",
+							"            \"type\": \"array\"",
+							"        },",
+							"        \"species\": {",
+							"            \"type\": \"object\"",
+							"        },",
+							"        \"sprites\": {",
+							"            \"type\": \"object\"",
+							"        },",
+							"        \"stats\": {",
+							"            \"type\": \"array\"",
+							"        },",
+							"        \"types\": {",
+							"            \"type\": \"array\"",
+							"        },",
+							"        \"weight\": {",
+							"            \"type\": \"integer\"",
+							"        }",
+							"    }",
+							"};",
+							"    ",
+							"pm.test(\"Validate schema\", () => {",
+							"    pm.response.to.have.jsonSchema(schema);",
+							"});",
+							"  ",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Tiempo < a 700\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(700);",
+							"});",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/charmander",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						"charmander"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ApredidoPorPokemon",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"moName\", \"\")",
+							"pm.environment.set(\"moUrl\", \"\")"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let myResponse = pm.response.json();",
+							"let char = myResponse.learned_by_pokemon[0];",
+							"console.log(char);",
+							"",
+							"pm.environment.set(\"moName\", char.name)",
+							"pm.environment.set(\"moUrl\", char.url)",
+							"console.log();",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Tiempo < o = 700\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(700);",
+							"});",
+							"",
+							"console.log();",
+							"pm.test(\"El nombre es charmander\", function () {",
+							"    pm.expect(char.name).to.eql(pm.environment.get(\"moName\"));",
+							"});",
+							"",
+							"console.log();",
+							"pm.test(\"La url  de charmander\", function () {",
+							"    pm.expect(char.url).to.eql(pm.environment.get(\"moUrl\"));",
+							"});",
+							"",
+							"pm.test(\"Body y Json existen\", function () {",
+							"    pm.response.to.be.withBody",
+							"    pm.response.to.be.json",
+							"});",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/move/mega-punch",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"move",
+						"mega-punch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
