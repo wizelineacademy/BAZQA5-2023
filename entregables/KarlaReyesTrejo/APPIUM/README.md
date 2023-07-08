@@ -129,4 +129,4 @@ Para generar reporte desde cero con Allure, se deben seguir los siguientes pasos
 ```  
 Así se mostrará el reporte ejecutado
 
-![Allure.jpg](..%2F..%2F..%2F..%2F..%2F..%2F..%2FDesktop%2FAllure.jpg)
+![Allure](https://github.com/karlyMish/BAZQA5-2023/assets/134418621/a21045e4-c91a-4678-9c9e-322151da8f91)
