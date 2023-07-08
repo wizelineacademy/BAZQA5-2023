@@ -9,7 +9,7 @@ def before_scenario(context, scenario):
         "platformName": "android",
         "platformVersion": "10",
         "deviceName": "emulator-5554",
-        'app': 'E:/Users/85810/PycharmProjects/baz_behave/baz_behave/APP/sauce_app.apk',
+        'app': 'E:/Users/85810/PycharmProjects/baz_behave/baz_behave/BAZQA5-2023/entregables/KarlaReyesTrejo/APPIUM/Behave/APP/sauce_app.apk',
         "appPackage": "com.swaglabsmobileapp",
         "appActivity": ".MainActivity"
     }
@@ -24,5 +24,5 @@ def context_variables(context):
     context.PASSWORD = data['PASSWORD']
 
 def after_scenario(context, scenario):
-    #subprocess.run("allure serve reports/android", shell=True)
+    subprocess.run("allure serve reports/android", shell=True)
     context.driver.quit()

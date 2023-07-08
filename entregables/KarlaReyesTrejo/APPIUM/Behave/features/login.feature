@@ -1,10 +1,11 @@
 Feature: Log In
+    @smoke
     @regresion
     Scenario: LOGIN
-    Given estamos en la pantalla de inicio
-    When ingresa usuario
-    When ingresa contraseña
-    When damos clic al botón
-    Then entramos a la app "SWAGLABS"
+    Given we are on the home screen
+        When enter user
+        When enter password
+        When we click the button
+        Then we enter the app "SWAGLABS"
 
 

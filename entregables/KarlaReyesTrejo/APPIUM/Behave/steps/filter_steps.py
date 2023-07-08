@@ -1,10 +1,10 @@
 from behave import *
-from screens.log_in_screen import LoginScreen
+from screens.login_screen import LoginScreen
 from screens.filter_screen import FilterScreen
 from utils.dictionaries.log_in_text import *
 
 
-@Given('estamos en el filtro de productos')
+@Given('we are in the product filter')
 def step_impl(context):
     login_in_screen = LoginScreen(context)
     login_in_screen.fill_text(*login_in_screen.txt_username, text=LOGIN_TEXTS.get("txt_username"))
@@ -14,19 +14,19 @@ def step_impl(context):
     filter_price.tap_element(*filter_price.btn_filter)
 
 
-@When('seleccionamos de menor a mayor')
+@When('we select from low to high')
 def step_impl(context):
     filter_price = FilterScreen(context)
     filter_price.tap_element(*filter_price.btn_low_price)
 
 
-@When('validamos menor precio')
+@When('we validate lower price')
 def step_impl(context):
     filter_price = FilterScreen(context)
     filter_price.assert_text(*filter_price.lbl_low_price_item, text=PRICE_PRODUCT_FILTER.get("LOW_PRICE"))
 
 
-@Then('validamos ordenamiento')
+@Then('we validate ordering')
 def step_impl(context):
     filter_price = FilterScreen(context)
     filter_price.tap_element(*filter_price.btn_filter)

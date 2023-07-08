@@ -116,7 +116,9 @@ Para generar reporte desde cero con Allure, se deben seguir los siguientes pasos
 ```bash
     pip install allure-behave
   ```  
+
 * Agregar el paquete allure-behave 
+* 
 * Posicionarse hasta la carpeta Behave dentro de la terminal y correr los siguientes comandos
 ```bash
   behave #para ver si corren todos los features 
@@ -125,10 +127,6 @@ Para generar reporte desde cero con Allure, se deben seguir los siguientes pasos
   
   allure serve reports/ #para mostrar el reporte
 ```  
-Se agregarn imagenes de ejecución
+Así se mostrará el reporte ejecutado
 
-![features_finalizados.jpg](..%2F..%2F..%2FDesktop%2Ffeatures_finalizados.jpg)
-
-![detalle_producto.jpg](..%2F..%2F..%2FDesktop%2Fdetalle_producto.jpg)
-
-![](E:\Users\85810\Desktop\filtrar_mayor a menor precio.jpg)
+![Allure.jpg](..%2F..%2F..%2F..%2F..%2F..%2F..%2FDesktop%2FAllure.jpg)
