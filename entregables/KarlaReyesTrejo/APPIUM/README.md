@@ -17,9 +17,9 @@ Para eso es necesario considerar la instalación de las siguientes herramientas 
 
   Se ha agregado el archivo requerimientos para su instalación.
 
+![](E:\Users\85810\PycharmProjects\baz_behave\baz_behave\BAZQA5-2023\entregables\KarlaReyesTrejo\APPIUM\Behave\img\requerimientos.jpg)
 
-
-  ![](E:\Users\85810\Desktop\requerimientos.jpg)
+ 
 
   
 ## Python3
@@ -44,7 +44,7 @@ Agregar el capabilitie de acuerdo a las caracteriticas de dipositivo agrego imag
         "platformName": "android",
         "platformVersion": "10",
         "deviceName": "emulator-5554",
-        'app': 'E:/Users/85810/PycharmProjects/baz_behave/baz_behave/APP/sauce_app.apk',
+        'app': 'E:/Users/85810/PycharmProjects/baz_behave/baz_behave/BAZQA5-2023/entregables/KarlaReyesTrejo/APPIUM/Behave/APP/sauce_app.apk',
         "appPackage": "com.swaglabsmobileapp",
         "appActivity": ".MainActivity"
     }
@@ -129,4 +129,17 @@ Para generar reporte desde cero con Allure, se deben seguir los siguientes pasos
 ```  
 Así se mostrará el reporte ejecutado
 
-![Allure.jpg](..%2F..%2F..%2F..%2F..%2F..%2F..%2FDesktop%2FAllure.jpg)
+![](E:\Users\85810\PycharmProjects\baz_behave\baz_behave\BAZQA5-2023\entregables\KarlaReyesTrejo\APPIUM\Behave\img\Allure.jpg)
+
+Para el análisis de código estático se instala
+```bash
+    pip install flake8
+  ```  
+Se ejecuta por carpetas 
+
+```bash
+flake8 ./steps
+flake8 ./screens
+  ```  
+Se visualiza así
+![](E:\Users\85810\PycharmProjects\baz_behave\baz_behave\BAZQA5-2023\entregables\KarlaReyesTrejo\APPIUM\Behave\img\flake8.jpg)
