@@ -1,7 +1,8 @@
-from behave import *
+from behave import Given, When, Then
 from screens.login_screen import LoginScreen
 from screens.filter_screen import FilterScreen
-from utils.dictionaries.log_in_text import *
+from utils.dictionaries.log_in_text import LOGIN_TEXTS
+from utils.dictionaries.log_in_text import PRICE_PRODUCT_FILTER
 
 
 @Given('we are in the product filter')

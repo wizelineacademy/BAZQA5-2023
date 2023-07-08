@@ -44,7 +44,7 @@ Agregar el capabilitie de acuerdo a las caracteriticas de dipositivo agrego imag
         "platformName": "android",
         "platformVersion": "10",
         "deviceName": "emulator-5554",
-        'app': 'E:/Users/85810/PycharmProjects/baz_behave/baz_behave/APP/sauce_app.apk',
+        'app': 'E:/Users/85810/PycharmProjects/baz_behave/baz_behave/BAZQA5-2023/entregables/KarlaReyesTrejo/APPIUM/Behave/APP/sauce_app.apk',
         "appPackage": "com.swaglabsmobileapp",
         "appActivity": ".MainActivity"
     }
@@ -90,7 +90,7 @@ PASSWORD=
 
 Para correr el set de pruebas debe tener la siguiente configuración, dentro del campo parameter colocar lo siguiente
 * ```bash
-  --tag=regresion
+  --tag=regresion, smoke
   -f
   allure_behave.formatter::AllureFormater
   -o
@@ -130,3 +130,17 @@ Para generar reporte desde cero con Allure, se deben seguir los siguientes pasos
 Así se mostrará el reporte ejecutado
 
 ![Allure.jpg](..%2F..%2F..%2F..%2F..%2F..%2F..%2FDesktop%2FAllure.jpg)
+
+Para el análisis de código estático
+
+```bash
+    pip install flake8
+  ```  
+Se ejecuta por carpetas 
+```bash
+    flake8 ./steps
+    flake8 ./screens
+  ```
+
+Así se visualiza:
+![flake8.jpg](..%2F..%2F..%2F..%2F..%2F..%2F..%2FDesktop%2Fflake8.jpg)

@@ -1,6 +1,5 @@
 Feature: Log In
     @smoke
-    @regresion
     Scenario: LOGIN
     Given we are on the home screen
         When enter user

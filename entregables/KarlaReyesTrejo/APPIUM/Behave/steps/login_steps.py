@@ -1,12 +1,13 @@
-from behave import *
+from behave import Given, When, Then
 from screens.login_screen import LoginScreen
 from screens.product_screen import ProductScreen
-from utils.dictionaries.log_in_text import *
+from utils.dictionaries.log_in_text import LOGIN_TEXTS
 
 
 @Given('we are on the home screen')
 def step_impl(context):
     pass
+
 
 @When('enter user')
 def step_impl(context):

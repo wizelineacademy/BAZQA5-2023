@@ -11,4 +11,3 @@ class ProductScreen(CommonActions):
         self.detail_product = (By.XPATH, '(//android.view.ViewGroup[@content-desc="test-Item"])[1]' '/android.view.ViewGroup/android.widget.ImageView')
         self.lbl_price = (By.ANDROID_UIAUTOMATOR, '.text("$29.99")')
         self.lbl_product_name = (By.ANDROID_UIAUTOMATOR, '.text("Sauce Labs Backpack")')
-

@@ -1,7 +1,8 @@
-from behave import *
+from behave import Given, When, Then
 from screens.login_screen import LoginScreen
 from screens.product_screen import ProductScreen
-from utils.dictionaries.log_in_text import *
+from utils.dictionaries.log_in_text import LOGIN_TEXTS
+from utils.dictionaries.log_in_text import SEE_PRODUCT
 
 
 @Given('we are on the product screen')
@@ -16,6 +17,7 @@ def step_impl(context):
 def step_impl(context):
     product = ProductScreen(context)
     product.tap_element(*product.detail_product)
+
 
 @Then('validate product detail')
 def step_impl(context):
