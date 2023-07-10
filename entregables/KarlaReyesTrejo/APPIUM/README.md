@@ -17,9 +17,9 @@ Para eso es necesario considerar la instalación de las siguientes herramientas 
 
   Se ha agregado el archivo requerimientos para su instalación.
 
+![](E:\Users\85810\PycharmProjects\baz_behave\baz_behave\BAZQA5-2023\entregables\KarlaReyesTrejo\APPIUM\Behave\img\requerimientos.jpg)
 
-
-  ![](E:\Users\85810\Desktop\requerimientos.jpg)
+ 
 
   
 ## Python3
@@ -44,7 +44,7 @@ Agregar el capabilitie de acuerdo a las caracteriticas de dipositivo agrego imag
         "platformName": "android",
         "platformVersion": "10",
         "deviceName": "emulator-5554",
-        'app': 'E:/Users/85810/PycharmProjects/baz_behave/baz_behave/APP/sauce_app.apk',
+        'app': 'E:/Users/85810/PycharmProjects/baz_behave/baz_behave/BAZQA5-2023/entregables/KarlaReyesTrejo/APPIUM/Behave/APP/sauce_app.apk',
         "appPackage": "com.swaglabsmobileapp",
         "appActivity": ".MainActivity"
     }
@@ -116,7 +116,9 @@ Para generar reporte desde cero con Allure, se deben seguir los siguientes pasos
 ```bash
     pip install allure-behave
   ```  
+
 * Agregar el paquete allure-behave 
+* 
 * Posicionarse hasta la carpeta Behave dentro de la terminal y correr los siguientes comandos
 ```bash
   behave #para ver si corren todos los features 
@@ -125,10 +127,19 @@ Para generar reporte desde cero con Allure, se deben seguir los siguientes pasos
   
   allure serve reports/ #para mostrar el reporte
 ```  
-Se agregarn imagenes de ejecución
+Así se mostrará el reporte ejecutado
 
-![features_finalizados.jpg](..%2F..%2F..%2FDesktop%2Ffeatures_finalizados.jpg)
+![](E:\Users\85810\PycharmProjects\baz_behave\baz_behave\BAZQA5-2023\entregables\KarlaReyesTrejo\APPIUM\Behave\img\Allure.jpg)
 
-![detalle_producto.jpg](..%2F..%2F..%2FDesktop%2Fdetalle_producto.jpg)
+Para el análisis de código estático se instala
+```bash
+    pip install flake8
+  ```  
+Se ejecuta por carpetas 
 
-![](E:\Users\85810\Desktop\filtrar_mayor a menor precio.jpg)
+```bash
+flake8 ./steps
+flake8 ./screens
+  ```  
+Se visualiza así
+![](E:\Users\85810\PycharmProjects\baz_behave\baz_behave\BAZQA5-2023\entregables\KarlaReyesTrejo\APPIUM\Behave\img\flake8.jpg)
