@@ -9,6 +9,7 @@ def step_impl(context):
     login_screen = LoginScreen(context)
     login_screen.assert_text(*login_screen.txt_username, value=context.BTN_LOGIN)
 
+
 @When('we fill the "Usuario" label')
 def step_impl(context):
     login_screen = LoginScreen(context)
