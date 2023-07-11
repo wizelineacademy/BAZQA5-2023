@@ -1,6 +1,6 @@
 from appium.webdriver.common.appiumby import AppiumBy as By
 
-from utils.Base_actions import BaseActions
+from BEHAVE.utils.Base_actions import BaseActions
 
 
 class Checkout(BaseActions):

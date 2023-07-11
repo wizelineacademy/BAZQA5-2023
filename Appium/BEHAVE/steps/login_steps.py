@@ -1,6 +1,6 @@
 
-from screens.login_screen import LoginScreen
-from screens.product_screen import ProductosScreen
+from BEHAVE.screens.login_screen import LoginScreen
+from BEHAVE.screens.product_screen import ProductosScreen
 from behave import *
 
 

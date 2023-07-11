@@ -1,10 +1,9 @@
-from screens.checkout_screen import Checkout
-from screens.login_screen import LoginScreen
-from screens.product_car_screen import ProductCar
-from screens.productos_screen import ProductosScreen
-from screens.purchase_confirmation_screen import PuchaseConfirmacion
-from screens.resumen_screen import Resumen
-from utils.dictionaries.checkout_text import FORM, PAGE_TEXTS
+from BEHAVE.screens.checkout_screen import Checkout
+from BEHAVE.screens.product_car_screen import ProductCar
+from BEHAVE.screens.productos_screen import ProductosScreen
+from BEHAVE.screens.purchase_confirmation_screen import PuchaseConfirmacion
+from BEHAVE.screens.resumen_screen import Resumen
+from BEHAVE.utils.dictionaries.checkout_text import FORM, PAGE_TEXTS
 from behave import *
 
 @When("we has added the first items to the shopping cart")

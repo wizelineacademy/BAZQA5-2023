@@ -1,6 +1,6 @@
-from screens.login_screen import LoginScreen
-from screens.product_car_screen import ProductCar
-from screens.product_screen import ProductosScreen
+from BEHAVE.screens.login_screen import LoginScreen
+from BEHAVE.screens.product_car_screen import ProductCar
+from BEHAVE.screens.product_screen import ProductosScreen
 from behave import *
 
 @Given('we are in the "Productos" screen')

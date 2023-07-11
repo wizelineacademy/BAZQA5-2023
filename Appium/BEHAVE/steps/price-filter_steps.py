@@ -1,5 +1,5 @@
 
-from screens.product_screen import ProductosScreen
+from BEHAVE.screens.product_screen import ProductosScreen
 from behave import *
 
 
