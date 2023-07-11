@@ -1,6 +1,6 @@
-from screens.login_screen import LoginScreen
-from screens.product_screen import ProductosScreen
-from screens.product_detail_screen import ProductDetail
+from BEHAVE.screens.login_screen import LoginScreen
+from BEHAVE.screens.product_screen import ProductosScreen
+from BEHAVE.screens.product_detail_screen import ProductDetail
 from behave import *
 
 
@@ -23,7 +23,7 @@ def step_impl(context):
 def step_impl(context):
     productdetail = ProductDetail(context)
     productdetail.assert_text(*productdetail.ProductName, text= context.PROD_HIGH_NAME)
-    pass
+
 
 
 @Then("we validate that the product price on the description is correct")
@@ -31,4 +31,3 @@ def step_impl(context):
     productdetail = ProductDetail(context)
     productdetail.scroll1(*productdetail.ProductPrice)
     productdetail.assert_text(*productdetail.ProductPrice, value= context.PRODUCT_PRICE)
-    pass

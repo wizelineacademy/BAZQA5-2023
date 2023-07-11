@@ -1,6 +1,6 @@
 
-from screens.login_screen import LoginScreen
-from screens.product_screen import ProductosScreen
+from BEHAVE.screens.login_screen import LoginScreen
+from BEHAVE.screens.product_screen import ProductosScreen
 from behave import *
 
 
@@ -8,6 +8,7 @@ from behave import *
 def step_impl(context):
     login_screen = LoginScreen(context)
     login_screen.assert_text(*login_screen.txt_username, value=context.BTN_LOGIN)
+
 
 @When('we fill the "Usuario" label')
 def step_impl(context):

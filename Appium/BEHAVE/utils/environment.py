@@ -1,3 +1,4 @@
+from lib2to3.fixes.fix_input import context
 from os.path import dirname, abspath
 from appium import webdriver
 from dotenv import dotenv_values
@@ -16,6 +17,9 @@ def before_scenario(context, scenario):
 
     context.driver.implicitly_wait(10)
 
+def after_scenario(context):
+    subprocess.run("allure serve reports/android", shell=True)
+    context.driver.quit()
 
 def context_variables(context):
     current_directory = dirname(abspath(__file__))
@@ -37,5 +41,7 @@ def before_all(context):
     context_variables(context)
 
 
-def after_all(context):
-    subprocess.run("allure serve reports/android", shell=True)
+
+
+if __name__ == "__main__":
+    before_all(context)
